@@ -1,2 +1,3 @@
 venv/*
 hmh/__pycache__/*
+static/
