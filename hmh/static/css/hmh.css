@@ -10,7 +10,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -23,11 +23,11 @@
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 95%;
     padding: 0; } }
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 90%; }
 
   .column,
   .columns {
@@ -146,7 +146,7 @@ body {
   font-size: 1.6em;
   line-height: 1.5;
   font-weight: 400;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #354242; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -478,7 +478,7 @@ a {
 button {
   font-size: 1.8rem;
   font-weight: 400;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 2rem;
   text-transform: none;
   -webkit-transition: color 0.2s, background 0.2s, border-color 0.2s;
@@ -490,7 +490,7 @@ button {
 input[type="submit"], input[type="reset"], input[type="button"] {
   font-size: 1.8rem;
   font-weight: 400;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 2rem;
   text-transform: none;
   -webkit-transition: color 0.2s, background 0.2s, border-color 0.2s;
@@ -529,24 +529,12 @@ html, body {
   min-height: 100%; }
 
 body {
-  background: #FFFF9D;
-  /* Old browsers */
-  background: -moz-linear-gradient(#FFFF9D 0%, #ACEBAE 100%);
-  /* FF3.6+ */
-  background: -webkit-linear-gradient(#FFFF9D 0%, #ACEBAE 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(#FFFF9D 0%, #ACEBAE 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(#FFFF9D 0%, #ACEBAE 100%);
-  /* IE10+ */
-  background: linear-gradient(#FFFF9D 0%, #ACEBAE 100%);
-  /* W3C */
-  background-repeat: no-repeat; }
+  background: #ffffb7; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500; }
+  font-family: Helvetica Neue, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
 
 h1 {
   font-size: 7.0rem;
@@ -596,6 +584,15 @@ h6 {
 
   h6 {
     font-size: 1.5rem; } }
+.ui-slider-handle:focus {
+  outline: none !important; }
+
+.box {
+  padding: 10px;
+  margin-bottom: 26px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1); }
+
 .text-right {
   text-align: right; }
 
@@ -606,15 +603,15 @@ h6 {
   .title h1 {
     font-weight: 100; }
 
-.input-main input {
-  display: block;
-  width: 600px;
-  margin: 0 auto;
-  font-size: 2.4rem;
-  height: 4.6rem;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); }
+.input-main {
+  margin-bottom: 40px; }
+  .input-main input {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    height: 4.6rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1); }
 
 .autocomplete-suggestions {
   overflow: auto;

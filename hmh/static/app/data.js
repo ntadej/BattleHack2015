@@ -17,9 +17,7 @@ var data = {
 
 		$('#issue-input').autocomplete({
 		    lookup: lookupData,
-		    onSelect: function (suggestion) {
-		        console.log('You selected: ' + suggestion.value + ', ' + suggestion.data);
-		    }
+		    onSelect: hmh.issueSelectedCallback
 		});
 	}
 }
