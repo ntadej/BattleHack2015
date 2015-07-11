@@ -18,7 +18,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class CandidateSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Candidate
-        fields = ('id', 'url', 'first_name', 'last_name', 'party')
+        fields = ('id', 'url', 'first_name', 'last_name', 'party', 'img_url', 'description')
 
 
 class PartySerializer(serializers.HyperlinkedModelSerializer):
@@ -30,7 +30,7 @@ class PartySerializer(serializers.HyperlinkedModelSerializer):
 class IssueSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Issue
-        fields = ('id', 'url', 'short_desc', 'description')
+        fields = ('id', 'url', 'short_desc', 'description', 'max_label', 'min_label')
 
 
 class OpinionSerializer(serializers.HyperlinkedModelSerializer):

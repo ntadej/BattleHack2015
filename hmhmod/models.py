@@ -14,6 +14,7 @@ class Candidate(models.Model):
     # Party
     party = models.ForeignKey(Party)
     img_url = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
     # class Meta:
     #     ordering = ['done', 'created']
 
@@ -29,3 +30,10 @@ class Opinion(models.Model):
     candidate = models.ForeignKey(Candidate)
     issue = models.ForeignKey(Issue)
     value = models.IntegerField(default=0)
+
+
+class Charity(models.Model):
+    name = models.TextField()
+    description = models.TextField()
+    value = models.IntegerField()
+    issue = models.ForeignKey(Issue)
