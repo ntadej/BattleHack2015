@@ -36,36 +36,39 @@ class CandidateViewSet(viewsets.ModelViewSet):
         List the Candidates
         """
         print("Logging test")
-        slider_data = self.request.query_params.get('sliders', "{}")
-        slider_data = json.loads(slider_data)
-        slider_ids = [int(i) for i in slider_data]
-        if slider_ids:
-            opinions = models.Opinion.objects.filter(issue_id__in=slider_ids).all()
-            can_data = dict()
-            print(len(opinions))
-            for op in opinions:
-                can = op.candidate
-                if can.id not in can_data:
-                    can_data[can.id] = dict()
-                can_data[can.id][str(op.issue.id)] = op.value
-
-            score = dict()
-            for can in can_data:
-                score[can] = 0
-                for key, value in slider_data.items():
-                    val = 0
-                    if key in can_data[can]:
-                        val = int(can_data[can][key])
-                    score[can] += (val - int(value)) ** 2
-                # print(op.candidate.first_name)
-            print(score)
-            data = score.items()
-            best = sorted(data, key=lambda x: x[-1])
-            ids = [int(best[i][0]) for i in range(min(len(best), 5))]
-            print(ids)
-            return [models.Candidate.objects.get(id=i) for i in ids]
+        if 'pk' in self.kwargs:
+            return models.Candidate.objects
         else:
-            return models.Candidate.objects.all()[:5]
+            slider_data = self.request.query_params.get('sliders', "{}")
+            slider_data = json.loads(slider_data)
+            slider_ids = [int(i) for i in slider_data]
+            if slider_ids:
+                opinions = models.Opinion.objects.filter(issue_id__in=slider_ids).all()
+                can_data = dict()
+                print(len(opinions))
+                for op in opinions:
+                    can = op.candidate
+                    if can.id not in can_data:
+                        can_data[can.id] = dict()
+                    can_data[can.id][str(op.issue.id)] = op.value
+
+                score = dict()
+                for can in can_data:
+                    score[can] = 0
+                    for key, value in slider_data.items():
+                        val = 0
+                        if key in can_data[can]:
+                            val = int(can_data[can][key])
+                        score[can] += (val - int(value)) ** 2
+                    # print(op.candidate.first_name)
+                print(score)
+                data = score.items()
+                best = sorted(data, key=lambda x: x[-1])
+                ids = [int(best[i][0]) for i in range(min(len(best), 5))]
+                print(ids)
+                return [models.Candidate.objects.get(id=i) for i in ids]
+            else:
+                return models.Candidate.objects.all()
 
 
 class PartyViewSet(viewsets.ModelViewSet):
@@ -94,6 +97,7 @@ class OpinionViewSet(viewsets.ModelViewSet):
 
 def index(request):
     return render(request, "index.html")
+
 
 def pay(request):
     token = payments.client_token()

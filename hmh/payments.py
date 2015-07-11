@@ -7,8 +7,10 @@ braintree.Configuration.configure(braintree.Environment.Sandbox,
                                   public_key=os.environ['BT_PUBLICKEY'],
                                   private_key=os.environ['BT_PRIVATEKEY'])
 
+
 def client_token():
     return braintree.ClientToken.generate()
+
 
 def create_purchase(request):
     nonce = request.POST["payment_method_nonce"]
