@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Help Me Help</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/hmh.css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="/static/css/normalize.css">
-  <link rel="stylesheet" href="/static/css/skeleton.css">
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/static/js/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.autocomplete-1.2.18.min.js"></script>
+    <script src="/static/js/jquery.cookie-1.4.1.min.js"></script>
 
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="/static/js/jquery-2.1.4.min.js"></script>
+    <!-- App
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/static/app/data.js"></script>
+    <script src="/static/app/main.js"></script>
 
-</head>
-<body>
+  </head>
+  <body>
 
-{% block content %}
-{% endblock %}
+    <div class="container">
+      <div class="title">
+        <h1>Help Me Help</h1>
+      </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+      <div class="input-main">
+        <input id="issue-input" type="text" placeholder="Enter issue">
+      </div>
+    </div>
+
+  {% block content %}
+  {% endblock %}
+
+  </body>
 </html>

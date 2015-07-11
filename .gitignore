@@ -1,6 +1,8 @@
 venv/*
 hmh/__pycache__/*
-static/
+static/*
 hmhmod/__pycache__/*
 hmhmod/migrations/__pycache__/*
 env.sh
+*.sublime-workspace
+.sass-cache

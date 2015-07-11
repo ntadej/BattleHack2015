@@ -1,0 +1,12 @@
+.autocomplete-suggestions {
+	overflow: auto; padding-top: 0 !important;
+	background:#fff;
+	@include floating-shadow();
+	border: 1px solid $light-grey;
+}
+
+.autocomplete-suggestions a {
+
+}
+
+.autocomplete-suggestions strong { font-weight: normal; }
