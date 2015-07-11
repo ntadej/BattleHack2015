@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 import os
 import braintree
 
@@ -12,6 +13,11 @@ def client_token():
     return braintree.ClientToken.generate()
 
 
+def client_token_view(request):
+
+    return JsonResponse({"client_token": braintree.ClientToken.generate()})
+
+
 def create_purchase(request):
     nonce = request.POST["payment_method_nonce"]
     result = braintree.Transaction.sale({
@@ -19,8 +25,9 @@ def create_purchase(request):
         "payment_method_nonce": nonce
     })
     if result.is_success:
-        status = "<h1>Success! Transaction ID: {0}</h1>".format(result.transaction.id)
+        status = True
     else:
-        status = "<h1>Error: {0}</h1>".format(result.message)
+        status = False
 
-    return render(request, "pay_result.html", context={'result': status})
+    return JsonResponse({"success": status})
+    # return render(request, "pay_result.html", context={'result': status})
