@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 import rest_framework.urls
 from rest_framework import routers
-from hmh import views
+from hmh import views, payments
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
@@ -32,5 +32,8 @@ urlpatterns = [
     url(r'^pay/', views.pay, name='pay'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    url(r'^payments/token', payments.client_token, name='payments_token'),
+    url(r'^payments/purchase', payments.create_purchase, name='payments_purchase')
 ]

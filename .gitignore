@@ -3,3 +3,4 @@ hmh/__pycache__/*
 static/
 hmhmod/__pycache__/*
 hmhmod/migrations/__pycache__/*
+env.sh

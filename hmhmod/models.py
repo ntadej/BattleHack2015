@@ -26,4 +26,4 @@ class Issue(models.Model):
 class Opinion(models.Model):
     candidate = models.ForeignKey(Candidate)
     issue = models.ForeignKey(Issue)
-    value = models.IntegerField
+    value = models.IntegerField(default=0)

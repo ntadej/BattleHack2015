@@ -1,8 +1,10 @@
 from django.contrib.auth.models import User, Group
+from django.template.context_processors import csrf
 from rest_framework import viewsets
 import hmh.serializers as serial
 import hmhmod.models as models
 from django.shortcuts import render, redirect
+from hmh import payments
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -57,4 +59,7 @@ def index(request):
     return render(request, "index.html")
 
 def pay(request):
-    return render(request, "pay.html")
+    token = payments.client_token()
+    context = {'token': token}
+    context.update(csrf(request))
+    return render(request, "pay.html", context=context)
