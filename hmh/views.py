@@ -55,3 +55,6 @@ class OpinionViewSet(viewsets.ModelViewSet):
 
 def index(request):
     return render(request, "index.html")
+
+def pay(request):
+    return render(request, "pay.html")
