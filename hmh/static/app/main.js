@@ -10,7 +10,7 @@ var hmh = {
 
         var list = $('#current-issues');
 
-        var item = $('<div class="box" style="display:none;"></div>');
+        var item = $('<div class="box" style="display:none;" data-id="' + data.issues[suggestion.data].id + '"></div>');
         item.append('<h4>' + data.issues[suggestion.data].short_desc + '</h4>');
         item.append('<div class="slider"></div>');
         item.append('<p>' + data.issues[suggestion.data].description + '</p>');
@@ -21,6 +21,7 @@ var hmh = {
 	        max: 2,
 		    change: function(event, ui) {
 		        console.log(ui.value);
+		        data.getCandidates();
 		    }
 		});
 
@@ -28,6 +29,17 @@ var hmh = {
 		item.slideDown();
 
 		$('#issue-input').val('');
+
+		data.getCandidates();
+    },
+
+    displayCandidates: function()
+    {
+    	var list = $('#recommendations').empty();
+
+    	for (var i = 0; i < data.currentCandidates.length; i++) {
+    		list.append('<p>' + data.currentCandidates[i].first_name + ' ' + data.currentCandidates[i].last_name + '</p>');
+    	}
     }
 }
 
