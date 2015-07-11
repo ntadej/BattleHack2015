@@ -13,7 +13,7 @@ class Candidate(models.Model):
 
     # Party
     party = models.ForeignKey(Party)
-
+    img_url = models.TextField(blank=True, null=True)
     # class Meta:
     #     ordering = ['done', 'created']
 
@@ -21,6 +21,8 @@ class Candidate(models.Model):
 class Issue(models.Model):
     short_desc = models.TextField()
     description = models.TextField()
+    max_label = models.TextField(blank=True, null=True)
+    min_label = models.TextField(blank=True, null=True)
 
 
 class Opinion(models.Model):
