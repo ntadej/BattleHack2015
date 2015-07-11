@@ -1,37 +1,9 @@
-- ime: Circle of Friends for American Veterans
-  issue_id: 13
-  opis: Educational organization that supports those who served in American uniform;
-    takes the cause of homeless and other American veterans to the attention of the
-    American public, using the force of public opinion to positively affect public
-    policy, while providing Congress with information about the needs &amp; solutions
-    for those who served.
-  url: /ratings-and-metrics/circle-of-friends-for-american-veterans/691
-  value: 2
 - ime: Drug Policy Alliance
   issue_id: 13
   opis: To advance those policies and attitudes that best reduce the harms of both
     drug use and drug prohibition, and to promote the sovereignty of individuals over
     their minds and bodies.
   url: /ratings-and-metrics/drug-policy-alliance/229
-  value: 2
-- ime: Hale House Center & Affiliates
-  issue_id: 13
-  opis: To deliver child-centered, family-focused programs that are responsive to
-    the unique circumstances of each family it serves and the evolving social needs
-    within its community.
-  url: /ratings-and-metrics/hale-house-center-affiliates/230
-  value: 2
-- ime: Law Enforcement Education Program
-  issue_id: 13
-  opis: To support education of children and young adults in the area of law enforcement
-    as well as other child safety issues including child fingerprinting.
-  url: /ratings-and-metrics/law-enforcement-education-program/231
-  value: 2
-- ime: Mothers Against Drunk Driving
-  issue_id: 13
-  opis: To stop drunk driving, support victims of drunk driving, and prevent underage
-    drinking.
-  url: /ratings-and-metrics/mothers-against-drunk-driving/232
   value: 2
 - ime: Partnership for Drug-Free Kids
   issue_id: 13
@@ -51,11 +23,6 @@
     of underage drinking, other drug use, impaired and risky driving and other destructive
     decisions.
   url: /ratings-and-metrics/sadd-national-office/236
-  value: 2
-- ime: African Wildlife Foundation
-  issue_id: 6
-  opis: To ensure the wildlife and wild lands of Africa will endure forever.
-  url: /ratings-and-metrics/african-wildlife-foundation/237
   value: 2
 - ime: Alaska Conservation Foundation
   issue_id: 6
@@ -287,24 +254,6 @@
     who earn their living from the ocean.
   url: /ratings-and-metrics/ocean-conservancy/269
   value: 2
-- ime: Rails-to-Trails Conservancy
-  issue_id: 6
-  opis: Dedicated to preserve and transform unused rail corridors into linear parks.
-  url: /ratings-and-metrics/rails-to-trails-conservancy/270
-  value: 2
-- ime: Rainforest Action Network
-  issue_id: 6
-  opis: Campaigns for the forest, their inhabitants, and the natural systems that
-    sustain life by transforming the global marketplace through education, grassroots
-    organizing, and non-violent, direct action.
-  url: /ratings-and-metrics/rainforest-action-network/271
-  value: 2
-- ime: Rainforest Alliance
-  issue_id: 6
-  opis: To conserve biodiversity and ensure sustainable livelihoods by transforming
-    land-use practices, business practices and consumer behavior.
-  url: /ratings-and-metrics/rainforest-alliance/272
-  value: 2
 - ime: Resources for the Future
   issue_id: 6
   opis: To improve environmental and natural resource policy making worldwide through
@@ -383,18 +332,6 @@
   opis: To protect wilderness and inspire Americans to care for our wild places.
   url: /ratings-and-metrics/wilderness-society/283
   value: 2
-- ime: World Resources Institute
-  issue_id: 6
-  opis: To move human society to live in ways that protect Earth's environment and
-    its capacity to provide for the needs and aspirations of current and future generations.
-  url: /ratings-and-metrics/world-resources-institute/284
-  value: 2
-- ime: World Wildlife Fund
-  issue_id: 6
-  opis: To conserve nature and reduce the most pressing threats to the diversity of
-    life on Earth.
-  url: /ratings-and-metrics/world-wildlife-fund/285
-  value: 2
 - ime: Yosemite Conservancy
   issue_id: 6
   opis: Inspire people to support projects and programs that preserve and protect
@@ -427,14 +364,14 @@
     civilians in marksmanship; to foster and promote the shooting sports; to promote
     hunter safety.
   url: /ratings-and-metrics/national-rifle-association/288
-  value: 2
+  value: -2
 - ime: National Rifle Association (NRA) Foundation
   issue_id: 15
   opis: Support of a wide range of firearm-related public interest activities of the
     National Rifle Association of America and other organizations that defend and
     foster the Second Amendment rights of all law-abiding Americans.
   url: /ratings-and-metrics/national-rifle-association-nra-foundation/289
-  value: 2
+  value: -2
 - ime: ALS Association
   issue_id: 8
   opis: To lead the fight to cure and treat ALS through global, cutting-edge research.
@@ -690,18 +627,6 @@
   opis: Education on the prevention of injury &amp; illness.
   url: /ratings-and-metrics/national-emergency-medicine-association/327
   value: 2
-- ime: National Hemophilia Foundation (National Office)
-  issue_id: 8
-  opis: Dedicated to finding better treatments and cures for inheritable bleeding
-    disorders and to preventing the complications of these disorders through education,
-    advocacy and research.
-  url: /ratings-and-metrics/national-hemophilia-foundation-national-office/329
-  value: 2
-- ime: National Jewish Health
-  issue_id: 8
-  opis: To heal, discover and educate as a preeminent healthcare institution.
-  url: /ratings-and-metrics/national-jewish-health/330
-  value: 2
 - ime: National Kidney Foundation
   issue_id: 8
   opis: To prevent kidney and urinary tract diseases, improve the health well-being
@@ -851,32 +776,11 @@
     individual innocent human beings from creation to death--without compromise, without
     exception, without apology.
   url: /ratings-and-metrics/american-life-league/1
-  value: 2
+  value: -2
 - ime: Center for Reproductive Rights
   issue_id: 9
   opis: Promoting and defending women's reproductive rights worldwide.
   url: /ratings-and-metrics/center-for-reproductive-rights/2
-  value: 2
-- ime: 'EngenderHealth '
-  issue_id: 9
-  opis: To improve the health and well-being of people in the poorest communities
-    of the world by sharing expertise in sexual and reproductive health and transforming
-    of the quality of health care.
-  url: /ratings-and-metrics/engenderhealth/3
-  value: 2
-- ime: Family Care International
-  issue_id: 9
-  opis: 'To improve the health and well-being of women, girls, and newborns in the
-    developing world by working to: (1) make pregnancy and childbirth safer; (2) ensure
-    universal access to reproductive health care and information; (3) empower women,
-    young people, and communities.'
-  url: /ratings-and-metrics/family-care-international/4
-  value: 2
-- ime: Friends of UNFPA
-  issue_id: 9
-  opis: Building support within the U.S. for UNFPA's work and the overall advancement
-    of global health and rights, including reproductive health.
-  url: /ratings-and-metrics/friends-of-unfpa/480
   value: 2
 - ime: Guttmacher Institute
   issue_id: 9
@@ -885,13 +789,6 @@
     new ideas, encourage enlightened public debate, and promote sound policy and program
     development.
   url: /ratings-and-metrics/guttmacher-institute/5
-  value: 2
-- ime: International Planned Parenthood Federation-Western Hemisphere
-  issue_id: 9
-  opis: To improve the quality of life of individuals by campaigning for sexual and
-    reproductive health and rights through advocacy and services, especially for poor
-    and vulnerable people.
-  url: /ratings-and-metrics/international-planned-parenthood-federation-western-hemisphere/6
   value: 2
 - ime: NARAL Pro Choice America (National Office)
   issue_id: 9
@@ -910,77 +807,17 @@
   issue_id: 9
   opis: Devoted to disseminating information and support for pro-life issues.
   url: /ratings-and-metrics/national-right-to-life-committee/9
-  value: 2
+  value: -2
 - ime: National Right to Life Educational Trust Fund
   issue_id: 9
   opis: Educates the public about abortion, euthanasia, infanticide, and other related
     issues within the scope of bioethics.
   url: /ratings-and-metrics/national-right-to-life-educational-trust-fund/10
   value: 2
-- ime: Negative Population Growth
-  issue_id: 9
-  opis: To educate the American public and political leaders about the detrimental
-    effects of overpopulation on our environment, resources, and quality of life.
-  url: /ratings-and-metrics/negative-population-growth/481
-  value: 2
-- ime: Pathfinder International
-  issue_id: 9
-  opis: To ensure that people everywhere have the right and opportunity to live a
-    healthy reproductive life.
-  url: /ratings-and-metrics/pathfinder-international/11
-  value: 2
-- ime: PCI-Media Impact
-  issue_id: 9
-  opis: Uses creative media, the power of storytelling and the reach of broadcast
-    media to mobilize individual, community and political action in the areas of sexual
-    and reproductive health, HIV/AIDS, environmental conservation and sustainable
-    development, and human rights and democracy.
-  url: /ratings-and-metrics/pci-media-impact/482
-  value: 2
 - ime: Planned Parenthood Action Fund
   issue_id: 9
   opis: To protect women's health and reproductive choice through advocacy.
   url: /ratings-and-metrics/planned-parenthood-action-fund/12
-  value: 2
-- ime: Planned Parenthood Federation of America
-  issue_id: 9
-  opis: Ensuring the provision of comprehensive reproductive and complementary health
-    services in settings which preserve and protect the essential privacy and rights
-    of each individual; advocating public policies which guarantee these rights and
-    ensure access to such services; providing educational programs which enhance understanding
-    of individual and societal implications of human sexuality; and promoting research
-    and the advancement of technology in reproductive health care and encouraging
-    the understanding of their inherent bioethical, behavioral, and social implications.
-  url: /ratings-and-metrics/planned-parenthood-federation-of-america/13
-  value: 2
-- ime: Population Action International
-  issue_id: 9
-  opis: Promotes universal access to family planning and reproductive health services
-    through research, advocacy and innovative partnerships to dramatically improve
-    the health and autonomy of women, reduce poverty, strengthen civil society, and
-    protect the environment.
-  url: /ratings-and-metrics/population-action-international/483
-  value: 2
-- ime: Population Connection
-  issue_id: 9
-  opis: National grassroots population organization that educates young people and
-    advocates progressive action to stabilize world population at a level that can
-    be sustained by Earth's resources.
-  url: /ratings-and-metrics/population-connection/484
-  value: 2
-- ime: Population Council
-  issue_id: 9
-  opis: To improve the well-being and reproductive health of current and future generations
-    around the world and to help achieve a humane, equitable, and sustainable balance
-    between people and resources.
-  url: /ratings-and-metrics/population-council/485
-  value: 2
-- ime: Population Services International
-  issue_id: 9
-  opis: Measurably improve the health of the poor and vulnerable people in the developing
-    world, principally through social marketing of family planning and health products,
-    services, and communications.
-  url: /ratings-and-metrics/population-services-international/486
   value: 2
 - ime: Religious Coalition for Reproductive Choice
   issue_id: 9
