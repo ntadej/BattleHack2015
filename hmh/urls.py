@@ -22,6 +22,10 @@ from hmh import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'party', views.PartyViewSet)
+router.register(r'candidate', views.CandidateViewSet)
+router.register(r'issue', views.IssueViewSet)
+router.register(r'opinion', views.OpinionViewSet)
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
