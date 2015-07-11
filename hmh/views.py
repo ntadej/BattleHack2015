@@ -5,6 +5,7 @@ import hmh.serializers as serial
 import hmhmod.models as models
 from django.shortcuts import render, redirect
 from hmh import payments
+import json
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -29,6 +30,23 @@ class CandidateViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Candidate.objects.all()
     serializer_class = serial.CandidateSerializer
+
+    def get_queryset(self):
+        """
+        List the Candidates
+        """
+        slider_data = self.request.query_params.get('sliders', "{}")
+        slider_data = json.loads(slider_data)
+        slider_ids = [int(i) for i in slider_data]
+        opinions = models.Opinion.objects.filter(pk__in=slider_ids)
+        score = dict()
+
+        for op in opinions:
+            print(op.candidate)
+
+        return models.Candidate.objects
+
+
 
 
 class PartyViewSet(viewsets.ModelViewSet):
