@@ -6,3 +6,5 @@ hmhmod/migrations/__pycache__/*
 env.sh
 *.sublime-workspace
 .sass-cache
+*.map
+.env
