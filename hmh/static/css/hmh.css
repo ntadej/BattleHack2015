@@ -641,11 +641,17 @@ h6 {
   margin-bottom: 40px; }
   .input-main input {
     display: block;
-    width: 600px;
+    width: 80%;
+    max-width: 600px;
     margin: 0 auto;
     font-size: 2.4rem;
     height: 4.6rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1); }
+
+#instructions {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px; }
 
 .tooltip .tooltip-inner {
   max-width: 100px; }
@@ -682,8 +688,9 @@ h6 {
   margin-top: 40px;
   font-size: 1.4rem;
   text-align: center;
-  color: #999;
   margin-bottom: 10px; }
+  .footer a, .footer a:hover {
+    color: #999 !important; }
 
 .payment {
   position: absolute;
@@ -714,6 +721,10 @@ h6 {
 
 .donate-form {
   display: none; }
+  .donate-form .slider {
+    margin-bottom: 20px; }
+  .donate-form .amount {
+    color: #7D9100; }
 
 #recommendations-charities,
 #recommendations-candidates {
@@ -749,6 +760,18 @@ h6 {
 #current-tweets .throbber-loader {
   margin: 0 auto;
   display: block; }
+
+.about .item {
+  min-height: 100px;
+  margin-bottom: 10px; }
+  .about .item .icon {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
 
 .autocomplete-suggestions {
   overflow: auto;

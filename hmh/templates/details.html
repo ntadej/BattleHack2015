@@ -57,6 +57,9 @@
     	    	<div class="donate-form">
 			        <form id="checkout" method="post">
 			          	{% csrf_token %}
+                        Amount: <span class="amount"></span>
+
+                        <div class="slider"></div>
 			          	<div id="payment-form"></div>
 			          	<input type="submit" value="Pay">
 			        </form>

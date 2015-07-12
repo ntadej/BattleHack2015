@@ -1,18 +1,44 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div class="row">
-      <div id="current-issues" class="five columns">
+  <div class="about">
+  <h2>About</h2>
 
+
+  <div class="box">
+    <h3>Technologies used</h3>
+    
+    <div class="item">
+      <div class="icon" style="background-image:url(/static/img/django.png);"></div>
+      <h4>Django</h4>
+      <p>Python based backend framework for the whole website</p>
+      <span class="clear"></span>
     </div>
 
-      <div id="recommendations" class="seven columns box" style="display:none;">
-              <div class="throbber-main">
-        <div class="throbber-loader">
-          Loading…
-        </div>
-      </div>
-      </div>
-    </div>
+    <div class="item"><div class="icon" style="background-image:url(/static/img/js.png);"></div><h4>JavaScript + JQuery</h4><p>Client side, visual effects</p><span class="clear"></span></div>
+
+  <div class="item"><div class="icon" style="background-image:url(/static/img/postgres.png);"></div><h4>PostreSQL</h4><p>Relational Database for presidential candidates, charities and their attributes</p><span class="clear"></span></div>
+
+  <div class="item"><div class="icon" style="background-image:url(/static/img/braintree.png);"></div><h4>BrainTree</h4><p>Enabling donations to both charities and presidential candidates</p><span class="clear"></span></div>
+
+    <div class="item"><div class="icon" style="background-image:url(/static/img/heroku.png);"></div><h4>Heroku</h4><p>Hosting of the site</p><span class="clear"></span></div>
+
+    <div class="item"><div class="icon" style="background-image:url(/static/img/twitter.png);"></div><h4>Twitter API</h4><p>Twitter feeds for candidates and charities</p><span class="clear"></span></div>
+
+        <div class="item"><div class="icon" style="background-image:url(/static/img/google.png);"></div><h4>Google Search API</h4><p>Recent news and articles</p><span class="clear"></span></div>
+
+  </div>
+
+  <div class="box">
+    <h3>Authors</h3>
+
+    <h4><a href="http://tano.si" target="_blank">Tadej Novak</a></h4>
+    <h4><a href="http://pyphy.com" target="_blank">Maks Kolman</a></h4>
+    <h4>Dev Kordeš</h4>
+    <h4><a href="https://twitter.com/goskascience" target="_blank">Žiga Gosar</a></h4>
+
+  </div>
+
+  </div>
 
 {% endblock %}

@@ -17,12 +17,14 @@ var hmh = {
             data.getIssues();
         } else {
             $('body').removeClass('initial');
-            $('#issue-input').remove();
+            $('#issue-input, #instructions').remove();
 
-            data.getNews(HMHQuery);
-            data.getTweets(HMHQuery);
+            if (window.location.pathname.indexOf('about') == -1) {
+                data.getNews(HMHQuery);
+                data.getTweets(HMHQuery);
 
-            $('.donate .button').click(function() { $('.donate .donate-form').slideDown(); })
+                            $('.donate .button').click(hmh.payment);
+            }
         }
 	},
 
@@ -41,6 +43,7 @@ var hmh = {
 	issueSelectedCallback: function(suggestion)
 	{
         $('body').removeClass('initial');
+        $('#instructions').slideUp({duration: 200, complete: function(){ this.remove(); }});
 
         console.log('You selected: ' + suggestion.value + ', ' + suggestion.data);
 
@@ -110,6 +113,7 @@ var hmh = {
 
         if ($('#current-issues .box').length == 1) {
             $('#recommendations').fadeOut();
+            $('#current-issues .info').fadeOut({duration:200, complete:function() { this.remove();}});
         }
     },
 
@@ -161,35 +165,6 @@ var hmh = {
         }
     },
 
-    initPayment: function()
-    {
-    	var container = $('<div class="payment box" style="display:none;"></div>');
-
-        container.append('<form id="checkout" method="post"><div id="payment-form"></div><input type="submit" value="Pay $10"></form>');
-        container.find('#checkout').submit(hmh.paymentSubmit);
-
-    	$('body').append(container);
-
-    	data.getPaymentToken();
-
-    	container.fadeIn();
-
-
-    },
-
-    paymentSubmit: function(event)
-    {
-    	event.preventDefault();
-
-    	var obj = {
-    		'payment_method_nonce': $('.payment input[name="payment_method_nonce"]').val()
-    	}
-
-    	data.postPaymentData(obj);
-
-    	return false;
-    },
-
     displayTweets: function(response)
     {
         var list = $('#current-tweets');
@@ -217,6 +192,24 @@ var hmh = {
                 list.append('<div class="news box">' + response[i].title + '<br>' + $('<span>' + response[i].snippet + '</span>').text() + ' <a href="' + response[i].link + '" target="_blank">Read more</a></div>');
             }
         }
+    },
+
+    payment: function()
+    {
+        var donate = $('.donate .donate-form');
+        donate.parent().find('.button').slideUp({duration:200, function() { this.remove();}});
+
+        donate.find('.slider').slider({
+          value: 20,
+          min: 0,
+          max: 500,
+          slide: function( event, ui ) {
+            donate.find('.amount').text( "$" + ui.value );
+          }
+        });
+        donate.find('.amount').text( "$" + donate.find('.slider').slider( "value" ) );
+
+        $('.donate .donate-form').slideDown();
     }
 }
 

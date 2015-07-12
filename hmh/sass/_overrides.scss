@@ -101,7 +101,8 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 .input-main {
     input {
         display: block;
-        width:600px;
+        width:80%;
+        max-width:600px;
         margin:0 auto;
         font-size: 2.4rem;
         height: 4.6rem;
@@ -111,6 +112,12 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     }
 
     margin-bottom: 40px;
+}
+
+#instructions {
+    margin: 0 auto;
+            width:80%;
+        max-width:600px;
 }
 
 .tooltip .tooltip-inner {
@@ -159,8 +166,11 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     margin-top: 40px;
     font-size: 1.4rem;
     text-align: center;
-    color: $medium-grey;
     margin-bottom: 10px;
+
+    a, a:hover {
+        color: $medium-grey !important;
+    }
 }
 
 .payment {
@@ -191,6 +201,14 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 
 .donate-form {
     display:none;
+
+    .slider {
+        margin-bottom: 20px;
+    }
+
+    .amount {
+        color: $primary-color;
+    }
 }
 
 #recommendations-charities,
@@ -232,4 +250,22 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 #current-news .throbber-loader,
 #current-tweets .throbber-loader {
     margin:0 auto;   display: block;
+}
+
+.about {
+   // text-align:center;
+
+    .item {
+        min-height: 100px;
+    
+    .icon {
+        float: left;
+        width:100px;
+        height:100px;
+        margin-right:10px;
+        background-repeat:no-repeat; background-position:center;
+        background-size:contain;
+    }
+    margin-bottom: 10px;
+}
 }
