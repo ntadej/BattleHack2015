@@ -11,10 +11,7 @@ var data = {
 	{
 		data.issues = response;
 
-		var lookupData = [];
-		for (var i = 0; i < data.issues.length; i++) {
-			lookupData.push({ value: data.issues[i].short_desc, data: i });
-		}
+		var lookupData = hmh.notSelectedIssues();
 
 		$('#issue-input').autocomplete({
 		    lookup: lookupData,
@@ -39,5 +36,27 @@ var data = {
 		data.currentCandidates = response;
 
 		hmh.displayCandidates();
+	},
+
+	getPaymentToken: function()
+	{
+		$.getJSON('/api/payments/token', data.getPaymentTokenCallback);
+	},
+
+	getPaymentTokenCallback: function(response)
+	{
+      	braintree.setup(response.client_token, "dropin", {
+        	container: "payment-form"
+      	});
+	},
+
+	postPaymentData: function(obj)
+	{
+    	$.post('/api/payments/purchase', obj, data.postPaymentDataCallback, 'json');
+	},
+
+	postPaymentDataCallback: function(response)
+	{
+		$('.payment').empty().append(response.status);
 	}
 }

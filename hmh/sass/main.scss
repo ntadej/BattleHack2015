@@ -27,9 +27,9 @@ $font-family          : Helvetica Neue, "HelveticaNeue", "Helvetica Neue", Helve
 $font-family-headings : $font-family;
 
 //Grid Variables
-$container-width                     : 1200px !default;
-$container-width-larger-than-mobile  : 95% !default;
-$container-width-larger-than-phablet : 90% !default;
+$container-width                     : 920px !default;
+$container-width-larger-than-mobile  : 85% !default;
+$container-width-larger-than-phablet : 80% !default;
 $total-columns                       : 12 !default;
 $column-width                        : 100 / $total-columns !default; // calculates individual column width based off of # of columns
 $column-margin                       : 4% !default; // space between columns

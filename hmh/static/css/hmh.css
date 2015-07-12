@@ -10,7 +10,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -23,11 +23,11 @@
 
 @media (min-width: 400px) {
   .container {
-    width: 95%;
+    width: 85%;
     padding: 0; } }
 @media (min-width: 550px) {
   .container {
-    width: 90%; }
+    width: 80%; }
 
   .column,
   .columns {
@@ -628,6 +628,14 @@ h6 {
     height: 4.6rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1); }
 
+.tooltip .tooltip-inner {
+  max-width: 100px; }
+
+.slider-wrapper {
+  margin: 0 35px; }
+  .slider-wrapper .slider-wrapper {
+    margin: 0; }
+
 .slider {
   margin: 10px; }
 
@@ -648,6 +656,15 @@ h6 {
   font-size: 1.4rem;
   text-align: center;
   color: #999; }
+
+.payment {
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  margin-top: -150px; }
 
 .autocomplete-suggestions {
   overflow: auto;

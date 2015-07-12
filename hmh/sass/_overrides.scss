@@ -89,6 +89,18 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     margin-bottom: 40px;
 }
 
+.tooltip .tooltip-inner {
+    max-width:100px;
+}
+
+.slider-wrapper {
+    margin:0 35px;
+
+    .slider-wrapper {
+        margin:0;
+    }
+}
+
 .slider {
     margin: 10px;
 }
@@ -116,4 +128,11 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     font-size: 1.4rem;
     text-align: center;
     color: $medium-grey;
+}
+
+.payment {
+    position:absolute;
+    width:50%;
+    height:300px;
+    left:50%; top:50%; margin-left:-25%; margin-top:-150px;
 }
