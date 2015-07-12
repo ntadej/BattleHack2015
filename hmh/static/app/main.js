@@ -197,7 +197,10 @@ var hmh = {
     payment: function()
     {
         var donate = $('.donate .donate-form');
-        donate.parent().find('.button').slideUp({duration:200, function() { this.remove();}});
+        donate.parent().find('.button').slideUp({
+            duration: 200,
+            callback: function() { this.remove();}
+        });
 
         donate.find('.slider').slider({
           value: 20,

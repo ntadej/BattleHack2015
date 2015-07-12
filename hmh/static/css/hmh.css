@@ -531,8 +531,9 @@ html, body {
 body {
   background: #ffffb7; }
 
-body.initial .title {
-  margin-top: 160px; }
+@media (min-width: 550px) {
+  body.initial .title {
+    margin-top: 160px; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
@@ -656,6 +657,9 @@ h6 {
 .tooltip .tooltip-inner {
   max-width: 100px; }
 
+@media (max-width: 549px) {
+  .tooltip {
+    opacity: 0 !important; } }
 .slider-wrapper {
   margin: 0 35px; }
   .slider-wrapper .slider-wrapper {

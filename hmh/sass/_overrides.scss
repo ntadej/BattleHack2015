@@ -7,9 +7,12 @@ body {
 }
 
 body.initial {
+
+@media (#{$bp-larger-than-phablet}) {
     .title {
         margin-top:160px;
     }
+}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,6 +125,12 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 
 .tooltip .tooltip-inner {
     max-width:100px;
+}
+
+@media (#{$bp-smaller-than-phablet}) {
+    .tooltip {
+        opacity: 0 !important;
+    }
 }
 
 .slider-wrapper {
