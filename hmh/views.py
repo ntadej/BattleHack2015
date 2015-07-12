@@ -67,11 +67,11 @@ class CandidateViewSet(viewsets.ModelViewSet):
                 print(score)
                 data = score.items()
                 best = sorted(data, key=lambda x: x[-1])
-		# best[0][0 = id]
-		# [1 = score]
-		max_results = 10
-		max_score = 4.1
-		ids = [int(best[i][0]) for i in range(min(len(best), max_results)) if best[i][1] < max_score]
+                # best[0][0 = id]
+                # [1 = score]
+                max_results = 10
+                max_score = 4.1
+                ids = [int(best[i][0]) for i in range(min(len(best), max_results)) if best[i][1] < max_score]
                 #ids = [int(best[i][0]) for i in range(min(len(best), 5))]
                 print(ids)
                 return [models.Candidate.objects.get(id=i) for i in ids]
