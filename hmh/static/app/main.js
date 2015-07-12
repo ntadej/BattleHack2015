@@ -30,6 +30,8 @@ var hmh = {
 
 	issueSelectedCallback: function(suggestion)
 	{
+        $('body').removeClass('initial');
+        
         console.log('You selected: ' + suggestion.value + ', ' + suggestion.data);
 
         var list = $('#current-issues');

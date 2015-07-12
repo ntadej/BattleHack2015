@@ -5,8 +5,14 @@
 	border: 1px solid $light-grey;
 }
 
-.autocomplete-suggestions a {
-
+.autocomplete-suggestion {
+	padding: 5px;
 }
+
+.autocomplete-selected {
+    background:$light-grey !important; }
+
+.autocomplete-suggestions strong {
+    color:$primary-color !important; text-decoration:none; }
 
 .autocomplete-suggestions strong { font-weight: normal; }
