@@ -37,3 +37,9 @@ class OpinionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Opinion
         fields = ('id', 'url', 'candidate', 'issue', 'value')
+
+
+class CharitySerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = models.Charity
+        fields = ('id', 'url', 'name', 'description', 'value', 'issue')

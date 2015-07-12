@@ -95,6 +95,14 @@ class OpinionViewSet(viewsets.ModelViewSet):
     serializer_class = serial.OpinionSerializer
 
 
+class CharityViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Charitys to be viewed or edited.
+    """
+    queryset = models.Charity.objects.all()
+    serializer_class = serial.CharitySerializer
+
+
 def index(request):
     return render(request, "index.html")
 

@@ -26,6 +26,7 @@ router.register(r'party', views.PartyViewSet)
 router.register(r'candidate', views.CandidateViewSet)
 router.register(r'issue', views.IssueViewSet)
 router.register(r'opinion', views.OpinionViewSet)
+router.register(r'charity', views.CharityViewSet)
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
