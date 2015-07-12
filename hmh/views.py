@@ -127,3 +127,8 @@ def get_news(request):
     query = request.GET["query"]
     news = newsFeed.getFeed(query)
     return JsonResponse({"news": news})
+
+
+def candidate(request, id):
+    candidate = models.Candidate.objects.get(pk=id)
+    return render(request, "candidate.html", {"candidate": candidate})

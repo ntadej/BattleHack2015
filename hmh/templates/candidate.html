@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="row">
+      <div id="current-issues" class="five columns">
+            <h1>{{ candidate.first_name }} {{ candidate.last_name }}</h1>
+            <img src="{{ candidate.img_url }}"/>
+      </div>
+
+      <div id="recommendations" class="seven columns box" style="display:none;">
+
+      </div>
+    </div>
+
+{% endblock %}
