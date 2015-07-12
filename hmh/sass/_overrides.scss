@@ -135,16 +135,24 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     }
 }
 
-.first-candidate {
+.clear {
+    clear: both;
+}
+
+.candidate {
     h4 {
-        margin-bottom: 0.5rem;
+        line-height: 100px;
     }
+    
     .portrait {
-        width:200px;
-        height:200px;
-        background-repeat:no-repeat; background-position:center;
-        background-size:contain;
+        float: left;
+        width:100px;
+        height:100px;
+        margin-right:10px;
+        background-repeat:no-repeat; background-position:top;
+        background-size:cover; border-radius:50px;
     }
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -182,6 +190,7 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 
 #recommendations {
     position:relative;
+    min-height: 100%;
 }
 
 .info {

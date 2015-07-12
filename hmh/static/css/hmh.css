@@ -661,14 +661,22 @@ h6 {
 #recommendations h3 {
   margin-bottom: 0.5rem; }
 
-.first-candidate h4 {
-  margin-bottom: 0.5rem; }
-.first-candidate .portrait {
-  width: 200px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
+.clear {
+  clear: both; }
+
+.candidate {
+  margin-bottom: 10px; }
+  .candidate h4 {
+    line-height: 100px; }
+  .candidate .portrait {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 50px; }
 
 .footer {
   margin-top: 40px;
@@ -704,7 +712,8 @@ h6 {
   display: none; }
 
 #recommendations {
-  position: relative; }
+  position: relative;
+  min-height: 100%; }
 
 .info {
   text-align: center;
