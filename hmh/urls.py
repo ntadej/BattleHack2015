@@ -30,7 +30,6 @@ router.register(r'charity', views.CharityViewSet)
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^pay/', views.pay, name='pay'),
     url(r'^api/payments/token', payments.client_token_view, name='token'),
     url(r'^api/payments/purchase', payments.create_purchase, name='payments_purchase'),
     url(r'^api/tweets', views.get_tweets, name='get_tweets'),
@@ -39,5 +38,5 @@ urlpatterns = [
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^candidate/(?P<id>[0-9]+)', views.candidate),
-
+    url(r'^charity/(?P<id>[0-9]+)', views.charity)
 ]

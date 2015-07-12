@@ -217,3 +217,8 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
         opacity: 1;
     }
 }
+
+#current-news .throbber-loader,
+#current-tweets .throbber-loader {
+    margin:0 auto;   display: block;
+}

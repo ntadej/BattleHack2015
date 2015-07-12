@@ -169,4 +169,16 @@ def candidate(request, id):
     context = {"candidate": candidate, 'token': token, 'status': status }
     context.update(csrf(request))
 
-    return render(request, "candidate.html", context)
+    return render(request, "details.html", context)
+
+def charity(request, id):
+    status = ""
+    if request.method == "POST":
+        status = payments.create_purchase(request)
+
+    charity = models.Charity.objects.get(pk=id)
+    token = payments.client_token()
+    context = {"charity": charity, 'token': token, 'status': status }
+    context.update(csrf(request))
+
+    return render(request, "details.html", context)

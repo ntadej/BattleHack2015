@@ -736,6 +736,11 @@ h6 {
 .has-throbber .throbber-main {
   opacity: 1; }
 
+#current-news .throbber-loader,
+#current-tweets .throbber-loader {
+  margin: 0 auto;
+  display: block; }
+
 .autocomplete-suggestions {
   overflow: auto;
   padding-top: 0 !important;

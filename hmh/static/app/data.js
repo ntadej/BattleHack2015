@@ -1,5 +1,6 @@
 var data = {
 	currentCandidates: [],
+	currentCharities: [],
 	issues: [],
 
 	getIssues: function()
@@ -30,7 +31,7 @@ var data = {
 
 		$.getJSON('/api/candidate?sliders=' + JSON.stringify(params), data.getCandidatesCallback);
 
-        $('#recommendations .throbber-main').fadeIn(200);
+        $('#recommendations-candidates .throbber-main').fadeIn(200);
 	},
 
 	getCandidatesCallback: function(response)
@@ -38,6 +39,27 @@ var data = {
 		data.currentCandidates = response;
 
 		hmh.displayCandidates();
+	},
+
+	getCharities: function()
+	{
+		var params = {};
+		var issues = $('#current-issues .box');
+		for (var i = 0; i < issues.length; i++) {
+			var item = $(issues[i]);
+			params[item.attr('data-id')] = item.find('.slider').slider('value');
+		}
+
+		$.getJSON('/api/charity?sliders=' + JSON.stringify(params), data.getCharitiesCallback);
+
+        $('#recommendations-charities .throbber-main').fadeIn(200);
+	},
+
+	getCharitiesCallback: function(response)
+	{
+		data.currentCharities = response;
+
+		hmh.displayCharities();
 	},
 
 	getPaymentToken: function()

@@ -67,6 +67,7 @@ var hmh = {
 		    change: function(event, ui) {
 		        console.log(ui.value);
 		        data.getCandidates();
+                data.getCharities();
 		    }
 		});
 		hmh.setSliderTicks(item.find('.slider').removeClass('ui-corner-all'));
@@ -86,6 +87,7 @@ var hmh = {
 
         $('#recommendations').fadeIn();
 		data.getCandidates();
+        data.getCharities();
     },
 
     issueRemove: function(event)
@@ -97,6 +99,7 @@ var hmh = {
             this.remove(); 
             if ($('#current-issues .box').length) { 
                 data.getCandidates();
+                data.getCharities();
             } 
         }});
 
@@ -126,9 +129,9 @@ var hmh = {
 
     displayCandidates: function()
     {
-        $('#recommendations .throbber-main').fadeOut(200);
+        $('#recommendations-candidates .throbber-main').fadeOut(200);
 
-    	var list = $('#recommendations');
+    	var list = $('#recommendations-candidates');
         list.children(':not(.throbber-main)').remove();
 
     	list.append('<h3>Recommended presidential candidates</h3>');
@@ -137,6 +140,25 @@ var hmh = {
             var c = $('<div class="candidate"><div class="portrait" style="background-image:url(' + data.currentCandidates[i].img_url + ');"></div><h4><a href="' + data.currentCandidates[i].url.replace('/api/', '/') + '">' + data.currentCandidates[i].first_name + ' ' + data.currentCandidates[i].last_name + '</a></h4><span class="clear"></span></div>');
     		list.append(c);
     	}
+    },
+
+    displayCharities: function()
+    {
+        $('#recommendations-charities .throbber-main').fadeOut(200);
+
+        var list = $('#recommendations-charities');
+        list.children(':not(.throbber-main)').remove();
+
+        list.append('<h3>Recommended charities</h3>');
+
+        if (!data.currentCharities.length) {
+            list.append('<p class="info">No charities</p>');
+        } else {
+            for (var i = 0; i < data.currentCharities.length; i++) {
+                var c = $('<p><a href="' + data.currentCharities[i].url.replace('/api/', '/') + '">' + data.currentCharities[i].name + '</a></p>');
+                list.append(c);
+            }
+        }
     },
 
     initPayment: function()
@@ -171,19 +193,29 @@ var hmh = {
     displayTweets: function(response)
     {
         var list = $('#current-tweets');
+        list.find('.throbber-loader').remove();
 
-        for (var i = 0; i < response.length; i++) {
-            list.append('<div class="tweet box"><div class="img" style="background-image:url(' + response[i].imgUrl.replace('_normal', '_bigger') + ');"></div>'
-                + '<span class="author">@' + response[i].name + ':</span> ' + response[i].text + '</div>');
+        if (!response.length) {
+            list.append('<p class="info">No tweets</p>');
+        } else {
+            for (var i = 0; i < response.length; i++) {
+                list.append('<div class="tweet box"><div class="img" style="background-image:url(' + response[i].imgUrl.replace('_normal', '_bigger') + ');"></div>'
+                    + '<span class="author">@' + response[i].name + ':</span> ' + response[i].text + '</div>');
+            }
         }
     },
     
     displayNews: function(response)
     {
         var list = $('#current-news');
+        list.find('.throbber-loader').remove();
 
-        for (var i = 0; i < response.length; i++) {
-            list.append('<div class="news box">' + response[i].title + '<br>' + $('<span>' + response[i].snippet + '</span>').text() + ' <a href="' + response[i].link + '" target="_blank">Read more</a></div>');
+        if (!response.length) {
+            list.append('<p class="info">No news</p>');
+        } else {
+            for (var i = 0; i < response.length; i++) {
+                list.append('<div class="news box">' + response[i].title + '<br>' + $('<span>' + response[i].snippet + '</span>').text() + ' <a href="' + response[i].link + '" target="_blank">Read more</a></div>');
+            }
         }
     }
 }
