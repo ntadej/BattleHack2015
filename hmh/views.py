@@ -131,7 +131,7 @@ class CharityViewSet(viewsets.ModelViewSet):
                     if ch.value * slider_data[str(ch.issue.id)] >= 0:
                         result.append(ch.id)
                 print(result)
-                return models.Charity.objects.filter(pk__in=result)[:5]
+                return models.Charity.objects.filter(pk__in=result).order_by('?')[:5]
             else:
                 return models.Charity.objects.all()
 
