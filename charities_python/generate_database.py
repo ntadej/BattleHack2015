@@ -64,12 +64,13 @@ if True:
     ret = []
     for i, s in enumerate(stuff):
         tmp = {}
-        tmp['id'] = i
-        tmp['model'] = 'charity'
-        tmp['field'] = {}
-        tmp['field']['value'] = s['value']
-        tmp['field']['name'] = s['ime']
-        tmp['field']['description'] = s['opis']
+        tmp['pk'] = i + 1
+        tmp['model'] = 'hmhmod.charity'
+        tmp['fields'] = {}
+        tmp['fields']['value'] = s['value']
+        tmp['fields']['name'] = s['ime']
+        tmp['fields']['description'] = s['opis']
+        tmp['fields']['issue'] = s['issue_id']
         ret += [tmp]
     with open('baza2.yaml', 'w') as f:
         f.write(yaml.dump(ret))
