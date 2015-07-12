@@ -21,6 +21,8 @@ var hmh = {
 
             data.getNews(HMHQuery);
             data.getTweets(HMHQuery);
+
+            $('.donate .button').click(function() { $('.donate .donate-form').slideDown(); })
         }
 	},
 

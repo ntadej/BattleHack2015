@@ -697,6 +697,12 @@ h6 {
   background-repeat: no-repeat;
   border-radius: 25px; }
 
+#candidate-img img {
+  max-width: 100%; }
+
+.donate-form {
+  display: none; }
+
 .autocomplete-suggestions {
   overflow: auto;
   padding-top: 0 !important;

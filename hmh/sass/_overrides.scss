@@ -171,3 +171,11 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
         float: right; background-size:contain; background-repeat:no-repeat; border-radius:25px;
     }
 }
+
+#candidate-img img {
+    max-width: 100%;
+}
+
+.donate-form {
+    display:none;
+}

@@ -9,8 +9,46 @@ var HMHQuery = "{{ candidate.first_name }} {{ candidate.last_name }}";
 
 {% block content %}
 
-    <h2>{{ candidate.first_name }} {{ candidate.last_name }}, <small>presidential candidate</small></h2>
-    <img src="{{ candidate.img_url }}" />
+    <div class="row">
+      	<div id="candidate-img" class="five columns">
+    		<img src="{{ candidate.img_url }}" />
+		</div>
+
+	    <div id="candidate-info" class="seven columns box">
+    	    <h2>{{ candidate.first_name }} {{ candidate.last_name }}, <small>presidential candidate</small></h2>
+
+    	    <div class="donate">
+    	    	<h4>Co-fund election campaign</h4>
+    	    	{% if status != "" %}
+    	    		{% if status %}
+    	    			Your payment was successful. Thank you for your contribution.
+    	    		{% else %}
+    	    			Something went wrong with your payment. Please, try again.
+    	    		{% endif %}
+    	    	{% else %}
+    	    	<div class="button">Co-fund</div>
+    	    	<div class="donate-form">
+			        <form id="checkout" method="post">
+			          	{% csrf_token %}
+			          	<div id="payment-form"></div>
+			          	<input type="submit" value="Pay">
+			        </form>
+
+				    <script>
+				    // We generated a client token for you so you can test out this code
+				    // immediately. In a production-ready integration, you will need to
+				    // generate a client token on your server (see section below).
+			      	var clientToken = "{{ token }}";
+
+				    braintree.setup(clientToken, "dropin", {
+				        container: "payment-form"
+				    });
+				    </script>
+    	    	</div>
+    	    	{% endif %}
+    	    </div>
+	    </div>
+    </div>
 
     <div class="row">
         <div id="current-news" class="six columns">
