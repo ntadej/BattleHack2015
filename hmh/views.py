@@ -86,7 +86,7 @@ class IssueViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Issues to be viewed or edited.
     """
-    queryset = models.Issue.objects.all()
+    queryset = models.Issue.objects.all().order_by('short_desc')
     serializer_class = serial.IssueSerializer
 
 
@@ -104,6 +104,31 @@ class CharityViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Charity.objects.all()
     serializer_class = serial.CharitySerializer
+
+    def get_queryset(self):
+        """
+        List the Candidates
+        """
+        print("Logging test")
+        if 'pk' in self.kwargs:
+            return models.Charity.objects
+        else:
+            slider_data = self.request.query_params.get('sliders', "{}")
+            slider_data = json.loads(slider_data)
+            print(slider_data)
+            slider_ids = [int(i) for i in slider_data]
+            print(slider_ids)
+            if slider_ids:
+                charities = models.Charity.objects.filter(issue_id__in=slider_ids)
+                result = []
+                for ch in charities:
+                    print(ch.value * slider_data[str(ch.issue.id)])
+                    if ch.value * slider_data[str(ch.issue.id)] >= 0:
+                        result.append(ch.id)
+                print(result)
+                return models.Charity.objects.filter(pk__in=result)[:5]
+            else:
+                return models.Charity.objects.all()
 
 
 def index(request):
