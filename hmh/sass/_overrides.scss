@@ -182,15 +182,21 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 
 #candidate-img img {
     max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.donate h4 {
+    margin-top:20px;
 }
 
 .donate-form {
     display:none;
 }
 
-#recommendations {
+#recommendations-charities,
+#recommendations-candidates {
     position:relative;
-    min-height: 100%;
+    min-height: 50px;
 }
 
 .info {
@@ -216,6 +222,11 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
     .throbber-main {
         opacity: 1;
     }
+}
+
+#candidate-info p,
+#charity-info p {
+    text-align: justify;
 }
 
 #current-news .throbber-loader,

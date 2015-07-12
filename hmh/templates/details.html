@@ -27,6 +27,7 @@
             {% if candidate %}
             <div id="candidate-info" class="seven columns box">
                 <h2>{{ candidate.first_name }} {{ candidate.last_name }}, <small>presidential candidate</small></h2>
+                <p>{{ candidate.description }}</p>
             {% else %}
             <div id="charity-info" class="box">
                 <h2>{{ charity.name }}</h2>
