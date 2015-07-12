@@ -155,5 +155,13 @@ def get_news(request):
 
 
 def candidate(request, id):
+    status = ""
+    if request.method == "POST":
+        status = payments.create_purchase(request)
+
     candidate = models.Candidate.objects.get(pk=id)
-    return render(request, "candidate.html", {"candidate": candidate})
+    token = payments.client_token()
+    context = {"candidate": candidate, 'token': token, 'status': status }
+    context.update(csrf(request))
+
+    return render(request, "candidate.html", context)

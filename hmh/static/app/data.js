@@ -58,5 +58,25 @@ var data = {
 	postPaymentDataCallback: function(response)
 	{
 		$('.payment').empty().append(response.status);
+	},
+
+	getTweets: function(query)
+	{
+		$.getJSON('/api/tweets?query=' + encodeURI(query), data.getTweetsCallback);
+	},
+
+	getTweetsCallback: function(response)
+	{
+		hmh.displayTweets(response.tweets);
+	},
+
+	getNews: function(query)
+	{
+		$.getJSON('/api/news?query=' + encodeURI(query), data.getNewsCallback);
+	},
+
+	getNewsCallback: function(response)
+	{
+		hmh.displayNews(response.news);
 	}
 }

@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Help Me Help</title>
+    <title>{% block title %}{% endblock %}Help Me Help</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -35,6 +35,8 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="/static/app/data.js"></script>
     <script src="/static/app/main.js"></script>
+
+    <script type="text/javascript">{% block extrajs %}{% endblock %}</script>
 
   </head>
   <body class="initial">

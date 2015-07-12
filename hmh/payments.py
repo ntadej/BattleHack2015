@@ -24,10 +24,10 @@ def create_purchase(request):
         "amount": "10.00",
         "payment_method_nonce": nonce
     })
-    if result.is_success:
-        status = True
-    else:
-        status = False
+    return result.is_success;
+    #     status = True
+    # else:
+    #     status = False
 
-    return JsonResponse({"success": status})
+    # return JsonResponse({"success": status})
     # return render(request, "pay_result.html", context={'result': status})

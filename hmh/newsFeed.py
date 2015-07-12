@@ -13,7 +13,7 @@ def getFeed(query):
     i = 0
 
     for item in js:
-        megaArray += [{'title': item['title'], 'link': item['link']}]
+        megaArray += [{'title': item['title'], 'link': item['link'], 'snippet': item['contentSnippet']}]
         # megaArray += [item['link']]
         i += 1
         if i == 5:
