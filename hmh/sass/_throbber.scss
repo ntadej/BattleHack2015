@@ -1,0 +1,77 @@
+
+$throbber-loader-color: $light-grey !default;
+$throbber-loader-highlight-color: $primary-color !default;
+$throbber-loader-height: 1.5em !default;
+$throbber-loader-segment-width: 0.9em !default;
+$throbber-loader-spacing: 0.7em !default;
+
+@-moz-keyframes throbber-loader {
+  0% {
+    background: $throbber-loader-color;
+  }
+  10% {
+    background: $throbber-loader-highlight-color;
+  }
+  40% {
+    background: $throbber-loader-color;
+  }
+}
+@-webkit-keyframes throbber-loader {
+  0% {
+    background: $throbber-loader-color;
+  }
+  10% {
+    background: $throbber-loader-highlight-color;
+  }
+  40% {
+    background: $throbber-loader-color;
+  }
+}
+@keyframes throbber-loader {
+  0% {
+    background: $throbber-loader-color;
+  }
+  10% {
+    background: $throbber-loader-highlight-color;
+  }
+  40% {
+    background: $throbber-loader-color;
+  }
+}
+/* :not(:required) hides these rules from IE9 and below */
+.throbber-loader:not(:required) {
+  -moz-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  animation: throbber-loader 2000ms 300ms infinite ease-out;
+  background: $throbber-loader-color;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: $throbber-loader-segment-width;
+  height: $throbber-loader-height;
+  margin: 0 ($throbber-loader-segment-width + $throbber-loader-spacing);
+  
+  &:before, &:after {
+    background: $throbber-loader-color;
+    content: '\x200B';
+    display: inline-block;
+    width: $throbber-loader-segment-width;
+    height: $throbber-loader-height;
+    position: absolute;
+    top: 0;
+  }
+  
+  &:before {
+ -moz-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  animation: throbber-loader 2000ms 150ms infinite ease-out;
+    left: -($throbber-loader-segment-width + $throbber-loader-spacing);
+  }
+  
+  &:after {
+  -moz-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  animation: throbber-loader 2000ms 450ms infinite ease-out;
+    right: -($throbber-loader-segment-width + $throbber-loader-spacing);
+  }
+}

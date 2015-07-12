@@ -46,6 +46,12 @@ var hmh = {
 
         var list = $('#current-issues');
 
+        if (!list.find('.box').length) {
+            var inn = $('<div class="info" style="display:none;">Set your preferences using sliders.</div>');
+            list.append(inn);
+            inn.fadeIn();
+        }
+
         var item = $('<div class="box" style="display:none;" data-id="' + data.issues[suggestion.data].id + '"></div>');
         item.append('<div class="close"><i class="fa fa-times"></i></div>');
         item.append('<h4>' + data.issues[suggestion.data].short_desc + '</h4>');
@@ -66,8 +72,6 @@ var hmh = {
 		hmh.setSliderTicks(item.find('.slider').removeClass('ui-corner-all'));
 		item.find('.slider').tooltip();
 		item.find('.slider-wrapper').tooltip();
-
-
 		item.find('.close').click(hmh.issueRemove);
 
         list.prepend(item);
@@ -80,6 +84,7 @@ var hmh = {
 
         item.slideDown();
 
+        $('#recommendations').addClass('has-throbber').fadeIn();
 		data.getCandidates();
     },
 
@@ -87,12 +92,16 @@ var hmh = {
     {
     	var target = $(event.currentTarget).parent();
 
-    	target.slideUp({ complete: function() { data.getCandidates(); this.remove(); }});
+    	target.slideUp({ complete: function() { this.remove();  if ($('#current-issues .box').length) data.getCandidates(); }});
 
         $('#issue-input').autocomplete('dispose').autocomplete({
             lookup: hmh.notSelectedIssues(),
             onSelect: hmh.issueSelectedCallback
         });
+
+        if ($('#current-issues .box').length == 1) {
+            $('#recommendations').fadeOut();
+        }
     },
 
     setSliderTicks: function(slider)
@@ -111,7 +120,10 @@ var hmh = {
 
     displayCandidates: function()
     {
-    	var list = $('#recommendations').empty();
+        $('#recommendations').removeClass('has-throbber');
+
+    	var list = $('#recommendations');
+        list.children(':not(.throbber-main)').remove();
 
     	var first = data.currentCandidates[0];
 
@@ -121,8 +133,6 @@ var hmh = {
     	for (var i = 1; i < data.currentCandidates.length; i++) {
     		list.append('<p>' + data.currentCandidates[i].first_name + ' ' + data.currentCandidates[i].last_name + '</p>');
     	}
-
-    	list.fadeIn();
     },
 
     initPayment: function()

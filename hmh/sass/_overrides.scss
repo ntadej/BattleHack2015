@@ -179,3 +179,32 @@ h6 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;       }
 .donate-form {
     display:none;
 }
+
+#recommendations {
+    position:relative;
+}
+
+.info {
+    text-align: center;
+    font-style: italic;
+    color: $medium-grey;
+}
+
+.throbber-main {
+    position:absolute;
+    left:0; right:0; top:0; bottom:0;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+
+    opacity: 0;
+    -webkit-transition:opacity 0.2s;
+    transition: opacity 0.2s;
+
+    padding-top:50px;
+}
+
+.has-throbber {
+    .throbber-main {
+        opacity: 1;
+    }
+}

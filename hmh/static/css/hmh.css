@@ -703,6 +703,30 @@ h6 {
 .donate-form {
   display: none; }
 
+#recommendations {
+  position: relative; }
+
+.info {
+  text-align: center;
+  font-style: italic;
+  color: #999; }
+
+.throbber-main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  padding-top: 50px; }
+
+.has-throbber .throbber-main {
+  opacity: 1; }
+
 .autocomplete-suggestions {
   overflow: auto;
   padding-top: 0 !important;
@@ -724,5 +748,57 @@ h6 {
 
 .autocomplete-suggestions strong {
   font-weight: normal; }
+
+@-moz-keyframes throbber-loader {
+  0% {
+    background: #e1e1e1; }
+  10% {
+    background: #7D9100; }
+  40% {
+    background: #e1e1e1; } }
+@-webkit-keyframes throbber-loader {
+  0% {
+    background: #e1e1e1; }
+  10% {
+    background: #7D9100; }
+  40% {
+    background: #e1e1e1; } }
+@keyframes throbber-loader {
+  0% {
+    background: #e1e1e1; }
+  10% {
+    background: #7D9100; }
+  40% {
+    background: #e1e1e1; } }
+/* :not(:required) hides these rules from IE9 and below */
+.throbber-loader:not(:required) {
+  -moz-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  animation: throbber-loader 2000ms 300ms infinite ease-out;
+  background: #e1e1e1;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 0.9em;
+  height: 1.5em;
+  margin: 0 1.6em; }
+  .throbber-loader:not(:required):before, .throbber-loader:not(:required):after {
+    background: #e1e1e1;
+    content: '\x200B';
+    display: inline-block;
+    width: 0.9em;
+    height: 1.5em;
+    position: absolute;
+    top: 0; }
+  .throbber-loader:not(:required):before {
+    -moz-animation: throbber-loader 2000ms 150ms infinite ease-out;
+    -webkit-animation: throbber-loader 2000ms 150ms infinite ease-out;
+    animation: throbber-loader 2000ms 150ms infinite ease-out;
+    left: -1.6em; }
+  .throbber-loader:not(:required):after {
+    -moz-animation: throbber-loader 2000ms 450ms infinite ease-out;
+    -webkit-animation: throbber-loader 2000ms 450ms infinite ease-out;
+    animation: throbber-loader 2000ms 450ms infinite ease-out;
+    right: -1.6em; }
 
 /*# sourceMappingURL=hmh.css.map */
