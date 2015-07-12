@@ -29,6 +29,8 @@ var data = {
 		}
 
 		$.getJSON('/api/candidate?sliders=' + JSON.stringify(params), data.getCandidatesCallback);
+
+        $('#recommendations .throbber-main').fadeIn(200);
 	},
 
 	getCandidatesCallback: function(response)

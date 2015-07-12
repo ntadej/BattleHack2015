@@ -84,7 +84,7 @@ var hmh = {
 
         item.slideDown();
 
-        $('#recommendations').addClass('has-throbber').fadeIn();
+        $('#recommendations').fadeIn();
 		data.getCandidates();
     },
 
@@ -92,7 +92,13 @@ var hmh = {
     {
     	var target = $(event.currentTarget).parent();
 
-    	target.slideUp({ complete: function() { this.remove();  if ($('#current-issues .box').length) data.getCandidates(); }});
+    	target.slideUp({ complete: function()
+        {
+            this.remove(); 
+            if ($('#current-issues .box').length) { 
+                data.getCandidates();
+            } 
+        }});
 
         $('#issue-input').autocomplete('dispose').autocomplete({
             lookup: hmh.notSelectedIssues(),
@@ -120,18 +126,16 @@ var hmh = {
 
     displayCandidates: function()
     {
-        $('#recommendations').removeClass('has-throbber');
+        $('#recommendations .throbber-main').fadeOut(200);
 
     	var list = $('#recommendations');
         list.children(':not(.throbber-main)').remove();
 
-    	var first = data.currentCandidates[0];
+    	list.append('<h3>Recommended presidential candidates</h3>');
 
-    	list.append('<h3>Recommended presidential candidate</h3>');
-    	list.append('<div class="first-candidate"><h4>' + first.first_name + ' ' + first.last_name + '</h4><div class="portrait" style="background-image:url(' + first.img_url + ');"></div></div>');
-
-    	for (var i = 1; i < data.currentCandidates.length; i++) {
-    		list.append('<p>' + data.currentCandidates[i].first_name + ' ' + data.currentCandidates[i].last_name + '</p>');
+    	for (var i = 0; i < data.currentCandidates.length; i++) {
+            var c = $('<div class="candidate"><div class="portrait" style="background-image:url(' + data.currentCandidates[i].img_url + ');"></div><h4><a href="' + data.currentCandidates[i].url.replace('/api/', '/') + '">' + data.currentCandidates[i].first_name + ' ' + data.currentCandidates[i].last_name + '</a></h4><span class="clear"></span></div>');
+    		list.append(c);
     	}
     },
 
