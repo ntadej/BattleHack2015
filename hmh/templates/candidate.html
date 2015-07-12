@@ -1,15 +1,25 @@
 {% extends 'base.html' %}
+{% block title %}
+{{ candidate.first_name }} {{ candidate.last_name }} - 
+{% endblock %}
+
+{% block extrajs %}
+var HMHQuery = "{{ candidate.first_name }} {{ candidate.last_name }}";
+{% endblock %}
+
 {% block content %}
 
+    <h2>{{ candidate.first_name }} {{ candidate.last_name }}, <small>presidential candidate</small></h2>
+    <img src="{{ candidate.img_url }}" />
+
     <div class="row">
-      <div id="current-issues" class="five columns">
-            <h1>{{ candidate.first_name }} {{ candidate.last_name }}</h1>
-            <img src="{{ candidate.img_url }}"/>
-      </div>
+        <div id="current-news" class="six columns">
+        <h4>Latest news and articles</h4>
+		</div>
 
-      <div id="recommendations" class="seven columns box" style="display:none;">
-
-      </div>
+      	<div id="current-tweets" class="six columns">
+      	<h4>Latest tweets</h4>
+      	</div>
     </div>
 
 {% endblock %}

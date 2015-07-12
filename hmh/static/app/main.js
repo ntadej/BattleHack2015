@@ -13,7 +13,15 @@ var hmh = {
 		    }
 		});
 
-		data.getIssues();
+        if (window.location.pathname == '/') {            
+            data.getIssues();
+        } else {
+            $('body').removeClass('initial');
+            $('#issue-input').remove();
+
+            data.getNews(HMHQuery);
+            data.getTweets(HMHQuery);
+        }
 	},
 
     notSelectedIssues: function()
@@ -31,7 +39,7 @@ var hmh = {
 	issueSelectedCallback: function(suggestion)
 	{
         $('body').removeClass('initial');
-        
+
         console.log('You selected: ' + suggestion.value + ', ' + suggestion.data);
 
         var list = $('#current-issues');
@@ -142,6 +150,25 @@ var hmh = {
     	data.postPaymentData(obj);
 
     	return false;
+    },
+
+    displayTweets: function(response)
+    {
+        var list = $('#current-tweets');
+
+        for (var i = 0; i < response.length; i++) {
+            list.append('<div class="tweet box"><div class="img" style="background-image:url(' + response[i].imgUrl.replace('_normal', '_bigger') + ');"></div>'
+                + '<span class="author">@' + response[i].name + ':</span> ' + response[i].text + '</div>');
+        }
+    },
+    
+    displayNews: function(response)
+    {
+        var list = $('#current-news');
+
+        for (var i = 0; i < response.length; i++) {
+            list.append('<div class="news box">' + response[i].title + '<br>' + $('<span>' + response[i].snippet + '</span>').text() + ' <a href="' + response[i].link + '" target="_blank">Read more</a></div>');
+        }
     }
 }
 
