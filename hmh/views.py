@@ -6,6 +6,9 @@ import hmhmod.models as models
 from django.shortcuts import render, redirect
 from hmh import payments
 import json
+from hmh import getTwit
+from hmh import newsFeed
+from django.http import JsonResponse
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -112,3 +115,15 @@ def pay(request):
     context = {'token': token}
     context.update(csrf(request))
     return render(request, "pay.html", context=context)
+
+
+def get_tweets(request):
+    query = request.GET["query"]
+    twits = getTwit.getTwit(query)
+    return JsonResponse({"tweets": twits})
+
+
+def get_news(request):
+    query = request.GET["query"]
+    news = newsFeed.getFeed(query)
+    return JsonResponse({"news": news})

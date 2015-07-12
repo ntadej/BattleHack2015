@@ -33,6 +33,8 @@ urlpatterns = [
     url(r'^pay/', views.pay, name='pay'),
     url(r'^api/payments/token', payments.client_token_view, name='token'),
     url(r'^api/payments/purchase', payments.create_purchase, name='payments_purchase'),
+    url(r'^api/tweets', views.get_tweets, name='get_tweets'),
+    url(r'^api/news', views.get_news, name='get_news'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
