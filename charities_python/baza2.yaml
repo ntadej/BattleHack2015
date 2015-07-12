@@ -1,0 +1,670 @@
+- field: {description: 'To advance those policies and attitudes that best reduce the
+      harms of both drug use and drug prohibition, and to promote the sovereignty
+      of individuals over their minds and bodies.', name: Drug Policy Alliance, value: 2}
+  id: 0
+  model: charity
+- field: {description: Dedicated to reducing substance abuse among adolescents by
+      supporting families and engaging with teens., name: Partnership for Drug-Free
+      Kids, value: 2}
+  id: 1
+  model: charity
+- field: {description: 'Helping individuals, families, and communities affected by
+      substance abuse and dependency.', name: Phoenix House Foundation, value: 2}
+  id: 2
+  model: charity
+- field: {description: 'To provide students with the best prevention tools possible
+      to deal with issues of underage drinking, other drug use, impaired and risky
+      driving and other destructive decisions.', name: SADD (National Office), value: 2}
+  id: 3
+  model: charity
+- field: {description: To preserve Alaska's environment., name: Alaska Conservation
+      Foundation, value: 2}
+  id: 4
+  model: charity
+- field: {description: 'Conserves native wild birds and their habitats throughout
+      the Americas, safeguarding the rarest species, restoring habitats, and reducing
+      threats, while building capacity in the bird conservation movement.', name: American
+      Bird Conservancy, value: 2}
+  id: 5
+  model: charity
+- field: {description: 'To help farmers and ranchers protect their land, produce a
+      healthier environment and build successful communities.', name: American Farmland
+      Trust, value: 2}
+  id: 6
+  model: charity
+- field: {description: 'Protects and restores forests, preserving the health of our
+      planet and the well-being of its inhabitants.', name: American Forests, value: 2}
+  id: 7
+  model: charity
+- field: {description: 'Protects wild rivers, restores damaged rivers, and conserves
+      clean water for people and nature.', name: American Rivers, value: 2}
+  id: 8
+  model: charity
+- field: {description: 'To engage in educational and charitable activities including
+      officially promoting the annual observance of Arbor Day; inspiring people to
+      plant, nurture, and celebrate trees; stimulating a worldwide program of tree
+      and horticultural planting and care; advancing nature education and environmental
+      education; and maintaining Arbor Day Farm, the estate of Arbor Day''s founder,
+      J. Sterling Morton.', name: Arbor Day Foundation, value: 2}
+  id: 9
+  model: charity
+- field: {description: 'Works to secure a future for all species, great and small,
+      hovering on the brink of extinction, through science, law and creative media,
+      with a focus on protecting the lands, waters and climate that species need to
+      survive.', name: Center for Biological Diversity, value: 2}
+  id: 10
+  model: charity
+- field: {description: To save the Chesapeake Bay., name: Chesapeake Bay Foundation,
+    value: 2}
+  id: 11
+  model: charity
+- field: {description: 'Working with public, private and nonprofit partners, protects
+      America''s legacy of land and water resources through land acquisition, sustainable
+      community and economic development, and leadership training.', name: Conservation
+      Fund, value: 2}
+  id: 12
+  model: charity
+- field: {description: 'Building upon a strong foundation of science, partnership
+      and field demonstration, empowers societies to responsibly and sustainably care
+      for nature, our global biodiversity, for the well-being of humanity.', name: Conservation
+      International Foundation, value: 2}
+  id: 13
+  model: charity
+- field: {description: 'Dedicated to the protection and improvement of the quality
+      of life for present and future generations. Educational activities directed
+      toward members, classrooms, and the general public promote environmental awareness
+      leading to sound decisions to protect and manage the world''s resources.', name: Cousteau
+      Society, value: 2}
+  id: 14
+  model: charity
+- field: {description: Habitat and species protection., name: Defenders of Wildlife,
+    value: 2}
+  id: 15
+  model: charity
+- field: {description: 'Conserves, restores, and manages wetlands and associated habitats
+      for North America''s waterfowl.', name: Ducks Unlimited, value: 2}
+  id: 16
+  model: charity
+- field: {description: 'To develop and support projects that counteract threats to
+      the biological and cultural diversity that sustain the environment. Through
+      education and activism, these projects promote the conservation, preservation,
+      and restoration of the Earth.', name: Earth Island Institute, value: 2}
+  id: 17
+  model: charity
+- field: {description: 'Uses the law to protect natural heritage, safeguard health,
+      and promote a clean energy future.', name: Earthjustice, value: 2}
+  id: 18
+  model: charity
+- field: {description: Protecting communities and the environment from the adverse
+      impacts of mineral and energy development while promoting sustainable solutions.,
+    name: Earthworks, value: 2}
+  id: 19
+  model: charity
+- field: {description: 'To educate the public regarding environmental and conservation
+      issues, and advocate legislation and policies that protect the environmental
+      rights of all people.', name: Environmental Defense Action Fund, value: 2}
+  id: 20
+  model: charity
+- field: {description: 'To preserve the natural systems on which all life depends;
+      guided by science and economics, finds practical and lasting solutions to the
+      most serious environmental problems.', name: Environmental Defense Fund, value: 2}
+  id: 21
+  model: charity
+- field: {description: 'To conduct original, game-changing research that inspires
+      people, businesses and governments to take action to protect human health and
+      the environment.', name: Environmental Working Group, value: 2}
+  id: 22
+  model: charity
+- field: {description: 'Conducts extensive research and public education to ensure
+      the food, water and fish we consume is safe, accessible and sustainably produced.',
+    name: Food and Water Watch, value: 2}
+  id: 23
+  model: charity
+- field: {description: Defends the environment and champions a healthy and just world.,
+    name: Friends of the Earth, value: 2}
+  id: 24
+  model: charity
+- field: {description: To educate the general public on environmental matters and
+      promote the environment on a worldwide basis., name: Gaia-Movement Living Earth
+      Green World Action USA, value: 2}
+  id: 25
+  model: charity
+- field: {description: Greenpeace is an independent campaigning organization that
+      uses peaceful direct action and creative communication to expose global environmental
+      problems and promote solutions that are essential for a green and peaceful future.,
+    name: Greenpeace, value: 2}
+  id: 26
+  model: charity
+- field: {description: To protect and preserve the environment through the funding
+      of grants to other organizations., name: Greenpeace Fund, value: 2}
+  id: 27
+  model: charity
+- field: {description: 'To conserve, restore and promote the sustainable use and enjoyment
+      of our natural resources, including soil, air, woods, water and wildlife.',
+    name: Izaak Walton League of America, value: 2}
+  id: 28
+  model: charity
+- field: {description: To engage individuals in taking greater responsibility for
+      improving their community environments., name: Keep America Beautiful (National
+      Office), value: 2}
+  id: 29
+  model: charity
+- field: {description: 'Works to turn environmental values into national, state &amp;
+      local priorities; advocates for sound environmental laws &amp; policies; holds
+      elected officials accountable for their votes &amp; actions; elects pro-environmental
+      candidates who will champion our priority issues.', name: League of Conservation
+      Voters, value: 2}
+  id: 30
+  model: charity
+- field: {description: 'Works to turn environmental values into national, state &amp;
+      local priorities; educates the public, media &amp; elected officials about key
+      environmental issues; works to increase voter participation in the democratic
+      process; mobilizes a diverse network of activists to advocate for sound environmental
+      policies.', name: League of Conservation Voters Education Fund, value: 2}
+  id: 31
+  model: charity
+- field: {description: 'To conserve and restore natural ecosystems, focusing on birds
+      and other wildlife, for the benefit of humanity and the biological diversity
+      of the earth.', name: National Audubon Society, value: 2}
+  id: 32
+  model: charity
+- field: {description: 'The US Congress chartered the National Park Foundation to
+      strengthen the connection between the American people and their National Parks
+      by raising private funds, making strategic grants, creating innovative partnerships,
+      and increasing public awareness.', name: National Park Foundation, value: 2}
+  id: 33
+  model: charity
+- field: {description: Preserving parks today; creating park stewards for tomorrow.,
+    name: National Park Trust, value: 2}
+  id: 34
+  model: charity
+- field: {description: To protect and enhance America's national parks for present
+      and future generations., name: National Parks Conservation Association, value: 2}
+  id: 35
+  model: charity
+- field: {description: To inspire Americans to protect wildlife for our children's
+      future., name: National Wildlife Federation, value: 2}
+  id: 36
+  model: charity
+- field: {description: 'To safeguard the Earth: Its people, its plants and animals
+      and the natural systems on which all life depends.', name: Natural Resources
+      Defense Council, value: 2}
+  id: 37
+  model: charity
+- field: {description: 'Preserve plants, animals, and natural communities by protecting
+      the lands and waters they need to survive.', name: Nature Conservancy, value: 2}
+  id: 38
+  model: charity
+- field: {description: 'To bring people together to find solutions for our water planet;
+      educate and empower people to defend not only the ocean and its wildlife, but
+      also the millions who earn their living from the ocean.', name: Ocean Conservancy,
+    value: 2}
+  id: 39
+  model: charity
+- field: {description: To improve environmental and natural resource policy making
+      worldwide through social science research., name: Resources for the Future,
+    value: 2}
+  id: 40
+  model: charity
+- field: {description: 'To ensure the future of elk, other wildlife, their habitat
+      and our hunting heritage; includes conserving habitat, promoting elk management,
+      and educating members on conservation and hunting.', name: Rocky Mountain Elk
+      Foundation, value: 2}
+  id: 41
+  model: charity
+- field: {description: Protects and restores redwood forests and connects people with
+      their peace and beauty so these wonders of the natural world flourish., name: Save
+      the Redwoods League, value: 2}
+  id: 42
+  model: charity
+- field: {description: 'To explore, enjoy, and protect the wild places of the earth;
+      practice and promote responsible use of the earth''s ecosystems and resources;
+      educate and enlist humanity to protect and restore the quality of the natural
+      and human environment; and use all lawful means to carry out these objectives.',
+    name: Sierra Club, value: 2}
+  id: 43
+  model: charity
+- field: {description: 'To help educate, inspire and empower humanity to preserve
+      the natural and human environment by providing resources for charitable programs
+      that protect and restore the environment.', name: Sierra Club Foundation, value: 2}
+  id: 44
+  model: charity
+- field: {description: To build the next generation of conservation leaders and inspire
+      lifelong stewardship of our environment and communities by engaging young people
+      in hands-on service to the land., name: Student Conservation Association, value: 2}
+  id: 45
+  model: charity
+- field: {description: 'To conserve, protect, and restore North America''s coldwater
+      fisheries and their watersheds.', name: Trout Unlimited, value: 2}
+  id: 46
+  model: charity
+- field: {description: 'Conserves land for people to enjoy as parks, gardens, and
+      other natural places, ensuring livable communities for generations to come.',
+    name: Trust for Public Land, value: 2}
+  id: 47
+  model: charity
+- field: {description: Puts rigorous independent science to work to solve the most
+      pressing problems of our planet., name: Union of Concerned Scientists, value: 2}
+  id: 48
+  model: charity
+- field: {description: 'To draw attention to the world''s number one health problem,
+      unsafe and inadequate water supplies, and to raise funds to help fight this
+      immense problem - one community at a time.', name: Water.org, value: 2}
+  id: 49
+  model: charity
+- field: {description: Organized to serve as the umbrella group for other waterkeepers
+      programs throughout north America and other countries. Focuses on citizen advocacy
+      on the issues that affect our waterways., name: Waterkeeper Alliance, value: 2}
+  id: 50
+  model: charity
+- field: {description: To protect wilderness and inspire Americans to care for our
+      wild places., name: Wilderness Society, value: 2}
+  id: 51
+  model: charity
+- field: {description: Inspire people to support projects and programs that preserve
+      and protect Yosemite National Park's resources and enrich the visitor experience.,
+    name: Yosemite Conservancy, value: 2}
+  id: 52
+  model: charity
+- field: {description: 'Devoted to creating an America free from gun violence, where
+      all Americans are safe at home, at school, at work, and in our communities.',
+    name: Brady Campaign to Prevent Gun Violence, value: 2}
+  id: 53
+  model: charity
+- field: {description: 'Devoted to creating an America free from gun violence, where
+      all Americans are safe at home, at school, at work, and in our communities.',
+    name: Brady Center to Prevent Gun Violence, value: 2}
+  id: 54
+  model: charity
+- field: {description: 'Offers medical and legal support services to law enforcement
+      personnel, support for families of law enforcement personnel and free fingerprinting,
+      medical services and support for children.', name: National Police Defense Foundation,
+    value: 2}
+  id: 55
+  model: charity
+- field: {description: 'To protect and defend the U.S. constitution; to promote public
+      safety, law and order, and the national defense; to train law enforcement agencies;
+      to train civilians in marksmanship; to foster and promote the shooting sports;
+      to promote hunter safety.', name: National Rifle Association, value: -2}
+  id: 56
+  model: charity
+- field: {description: Support of a wide range of firearm-related public interest
+      activities of the National Rifle Association of America and other organizations
+      that defend and foster the Second Amendment rights of all law-abiding Americans.,
+    name: National Rifle Association (NRA) Foundation, value: -2}
+  id: 57
+  model: charity
+- field: {description: 'To lead the fight to cure and treat ALS through global, cutting-edge
+      research.', name: ALS Association, value: 2}
+  id: 58
+  model: charity
+- field: {description: 'Advance the understanding and treatment of brain tumors with
+      the goals of improving, extending and, ultimately, saving the lives of those
+      impacted by a brain tumor diagnosis.', name: American Brain Tumor Association,
+    value: 2}
+  id: 59
+  model: charity
+- field: {description: To prevent and cure diabetes and to improve the lives of all
+      people affected by diabetes., name: American Diabetes Association, value: 2}
+  id: 60
+  model: charity
+- field: {description: 'Building healthier lives, free of cardiovascular diseases
+      and stroke.', name: American Heart Association, value: 2}
+  id: 61
+  model: charity
+- field: {description: To fight kidney disease through direct financial support to
+      patients in need; health education; and prevention efforts., name: American
+      Kidney Fund, value: 2}
+  id: 62
+  model: charity
+- field: {description: 'To serve as a channel of Christ''s love to persons affected
+      by leprosy and related conditions, helping them be healed in body and spirit
+      and restored to lives of dignity and hope.', name: American Leprosy Missions,
+    value: 2}
+  id: 63
+  model: charity
+- field: {description: 'To facilitate, advocate and promote education, support and
+      research for the prevention, treatment and cure for liver disease.', name: American
+      Liver Foundation, value: 2}
+  id: 64
+  model: charity
+- field: {description: 'To save lives by improving lung health and preventing lung
+      disease, with the ultimate vision of a world free of lung disease.', name: American
+      Lung Association (National Office), value: 2}
+  id: 65
+  model: charity
+- field: {description: To foster and promote research for the cure and alleviation
+      of Parkinson's disease and its symptoms., name: American Parkinson Disease Association,
+    value: 2}
+  id: 66
+  model: charity
+- field: {description: Prevents and alleviates human suffering in the face of emergencies
+      by mobilizing the power of volunteers and the generosity of donors., name: American
+      Red Cross, value: 2}
+  id: 67
+  model: charity
+- field: {description: 'Promote the sexual health of individuals, families &amp; communities
+      by advocating sound policies &amp; practices and educating the public, professionals
+      &amp; policy makers, in order to foster healthy sexual behaviors &amp; relationships
+      and prevent adverse health outcomes.', name: 'American Sexual Health Association ',
+    value: 2}
+  id: 68
+  model: charity
+- field: {description: 'To improve lives through leadership in prevention, control
+      and cure of arthritis and related diseases.', name: Arthritis Foundation, value: 2}
+  id: 69
+  model: charity
+- field: {description: Seeks to save mind and sight by funding innovative research
+      worldwide and by promoting better health through education., name: BrightFocus
+      Foundation, value: 2}
+  id: 70
+  model: charity
+- field: {description: Hair replacement for children with medically related hair loss.,
+    name: Children With Hair Loss, value: 2}
+  id: 71
+  model: charity
+- field: {description: 'Dedicated to the prevention and cure of cancer and other life-threatening
+      diseases, guided by a compassionate, patient-centered philosophy and supported
+      by a national foundation of humanitarian philanthropy.', name: City of Hope,
+    value: 2}
+  id: 72
+  model: charity
+- field: {description: 'To cure Crohn''s disease and ulcerative colitis, and to improve
+      the quality of life of children and adults affected by these diseases.', name: Crohn's
+      & Colitis Foundation of America, value: 2}
+  id: 73
+  model: charity
+- field: {description: 'To cure cystic fibrosis and to provide all people with the
+      disease the opportunity to lead full, productive lives by funding research and
+      drug development, promoting individualized treatment, and ensuring access to
+      high quality, specialized care.', name: Cystic Fibrosis Foundation, value: 2}
+  id: 74
+  model: charity
+- field: {description: 'The prevention, early identification and effective self-management
+      of the global epidemic, diabetes.  Work with individuals and organizations worldwide
+      through awareness, interactive and assistance programs.', name: Defeat Diabetes
+      Foundation, value: 2}
+  id: 75
+  model: charity
+- field: {description: 'Committed to the prevention and treatment of diabetes and
+      to the funding of innovative, promising research aimed at finding a cure for
+      diabetes and diabetes related complications.', name: Diabetes Action Research
+      and Education Foundation, value: 2}
+  id: 76
+  model: charity
+- field: {description: 'To help find the cure for diabetes, and until that goal is
+      achieved, to provide the care and self-management skills needed to combat the
+      life-threatening complications of diabetes, and to promote public education
+      about the causes, prevention, and treatment of the disease.', name: Diabetes
+      Research & Wellness Foundation, value: 2}
+  id: 77
+  model: charity
+- field: {description: To provide the Diabetes Research Institute (at the University
+      of Miami Miller School of Medicine) with the funding necessary to cure diabetes
+      now., name: Diabetes Research Institute Foundation, value: 2}
+  id: 78
+  model: charity
+- field: {description: 'To continue to be the leading organization in helping children
+      and adults with disabilities to live with equality, dignity, and independence.',
+    name: Easter Seals (National Office), value: 2}
+  id: 79
+  model: charity
+- field: {description: 'Leads the fight to stop seizures, find a cure, and overcome
+      the challenges created by epilepsy.', name: Epilepsy Foundation & Epilepsy Research
+      Foundation, value: 2}
+  id: 80
+  model: charity
+- field: {description: To promote safe pregnancies and the survival of babies through
+      the first years of life. Provides compassionate grief support to all those affected
+      by the death of a baby., name: First Candle (National Office), value: 2}
+  id: 81
+  model: charity
+- field: {description: To prevent and cure hearing loss and tinnitus through groundbreaking
+      research., name: Hearing Health Foundation, value: 2}
+  id: 82
+  model: charity
+- field: {description: To provide direct assistance to heart disease victims as well
+      as grants to hospitals and other charitable institutions., name: Heart Center
+      of America, value: 2}
+  id: 83
+  model: charity
+- field: {description: A national voluntary health and welfare organization dedicated
+      to improving the lives of people with Huntington's Disease and their families.,
+    name: Huntington's Disease Society of America, value: 2}
+  id: 84
+  model: charity
+- field: {description: To find a cure for Type I diabetes and its complications through
+      the support of research., name: JDRF International, value: 2}
+  id: 85
+  model: charity
+- field: {description: 'Improve the quality of life for people with lupus through
+      research, education, and advocacy.', name: Lupus Foundation of America (National
+      Office), value: 2}
+  id: 86
+  model: charity
+- field: {description: Research for causes and cure for Lupus., name: Lupus Research
+      Institute, value: 2}
+  id: 87
+  model: charity
+- field: {description: 'To improve the health of babies by preventing birth defects,
+      premature birth, and infant mortality. Provides programs of research, community
+      service, education, and advocacy to save babies.', name: March of Dimes Foundation,
+    value: 2}
+  id: 88
+  model: charity
+- field: {description: To provide personal and medical information at times of need
+      to protect and save lives., name: MedicAlert Foundation United States, value: 2}
+  id: 89
+  model: charity
+- field: {description: 'Dedicated to ensuring the development of better treatments,
+      and ultimately a cure, for Parkinson''s disease through an aggressively funded
+      research agenda.', name: Michael J. Fox Foundation for Parkinson's Research,
+    value: 2}
+  id: 90
+  model: charity
+- field: {description: Provides free commercial airline tickets for sick children
+      needing treatments and second opinions not available in their own communities.,
+    name: Miracle Flights for Kids, value: 2}
+  id: 91
+  model: charity
+- field: {description: 'During November each year, is responsible for the sprouting
+      of moustaches on thousands of men''s faces. With their moustaches, these men
+      raise vital funds and awareness for men''s health to combat prostate and testicular
+      cancer.', name: Movember Foundation, value: 2}
+  id: 92
+  model: charity
+- field: {description: To enrich the quality of life of everyone affected by MS. Brings
+      ongoing support and direct services to people with MS and their families throughout
+      the United States., name: Multiple Sclerosis Association of America, value: 2}
+  id: 93
+  model: charity
+- field: {description: To provide programs and support services to those persons affected
+      by multiple sclerosis., name: Multiple Sclerosis Foundation, value: 2}
+  id: 94
+  model: charity
+- field: {description: 'Dedicated to curing muscular dystrophy, ALS, and related diseases
+      by funding worldwide research. Provides comprehensive health care, support services,
+      advocacy, and education.', name: Muscular Dystrophy Association, value: 2}
+  id: 95
+  model: charity
+- field: {description: To publish and disseminate information on health related issues
+      and to educate the general public about the plight of our nation's caregivers.,
+    name: National Caregiving Foundation, value: 2}
+  id: 96
+  model: charity
+- field: {description: The largest national Hispanic civil rights and advocacy organization
+      in the U.S.; works to improve opportunities for Hispanic Americans., name: National
+      Council of La Raza (NCLR), value: 2}
+  id: 97
+  model: charity
+- field: {description: Education on the prevention of injury &amp; illness., name: National
+      Emergency Medicine Association, value: 2}
+  id: 98
+  model: charity
+- field: {description: 'To prevent kidney and urinary tract diseases, improve the
+      health well-being of individuals and families affected by these diseases, and
+      increase the availability of all organs for transplantation.', name: National
+      Kidney Foundation, value: 2}
+  id: 99
+  model: charity
+- field: {description: Mobilizes people and resources to drive research for a cure
+      and to address the challenges of everyone affected by MS., name: National Multiple
+      Sclerosis Society (National Office), value: 2}
+  id: 100
+  model: charity
+- field: {description: 'Preventing osteoporosis and broken bones, promoting strong
+      bones for life, and reducing human suffering through programs of public and
+      clinician awareness, education, advocacy, and research.', name: National Osteoporosis
+      Foundation, value: 2}
+  id: 101
+  model: charity
+- field: {description: 'To improve the quality of care for people with Parkinson''s
+      disease through research, education, and outreach.', name: National Parkinson
+      Foundation, value: 2}
+  id: 102
+  model: charity
+- field: {description: 'To find a cure for psoriasis and psoriatic arthritis, and
+      to eliminate their devastating effects through research, advocacy, and education.',
+    name: National Psoriasis Foundation, value: 2}
+  id: 103
+  model: charity
+- field: {description: 'Saves lives by giving free surgery and related care to children
+      with clefts, creates sustainability in developing countries by training local
+      medical professionals, and educates the public.', name: Operation Smile, value: 2}
+  id: 104
+  model: charity
+- field: {description: 'To educate and empower Parkinson disease patients through
+      educational conferences, website and newsletters and to support scientific research
+      of Parkinson disease.', name: Parkinson Research Foundation, value: 2}
+  id: 105
+  model: charity
+- field: {description: 'Awards grants &amp; fellowships for research in Parkinson''s
+      disease; provides educational &amp; advocacy programs for people with Parkinson''s
+      disease, their families and caregivers.', name: Parkinson's Disease Foundation,
+    value: 2}
+  id: 106
+  model: charity
+- field: {description: 'To promote programs of research, advocacy, education, support
+      and awareness in order to discover treatments and a cure for polycystic kidney
+      disease (PKD) and improve the lives of all it affects.', name: PKD Foundation,
+    value: 2}
+  id: 107
+  model: charity
+- field: {description: 'Dedicated to increasing public and professional awareness
+      about the prevention, detection, and treatment of various chronic diseases with
+      complementary and alternative medicine. We do this by challenging medical orthodoxy
+      and amplifying new voices within the health care reform debate through dissemination
+      of letters, faxes, post cards, brochures, newsletters, websites, and other mass
+      communication tools. Primary focus is on three distinct chronic disease conditions:
+      Alzheimer''s disease, diabetes, and prostate cancer.', name: Project Cure, value: 2}
+  id: 108
+  model: charity
+- field: {description: 'The advancement and dissemination of knowledge relevant to
+      the health and well-being of man. Performs research and advanced instruction
+      in biology; the cause, prevention, and cure of diseases; and the factors and
+      circumstances conducive to the fulfillment of man''s biological potential.',
+    name: Salk Institute for Biological Studies, value: 2}
+  id: 109
+  model: charity
+- field: {description: Provide pediatric specialty care without financial obligation
+      to patients or their families., name: Shriners Hospitals for Children, value: 2}
+  id: 110
+  model: charity
+- field: {description: 'To provide free cleft surgery for children in developing countries,
+      and to provide free cleft-related training for doctors &amp; medical personnel.',
+    name: Smile Train, value: 2}
+  id: 111
+  model: charity
+- field: {description: 'To advance the independence, productivity and full citizenship
+      of people with disabilities through an affiliate network.', name: United Cerebral
+      Palsy Associations (National Office), value: 2}
+  id: 112
+  model: charity
+- field: {description: 'Perpetuate the memory of Will Rogers by promoting and engaging
+      in cardiopulmonary programs, as well as public health education, under the name
+      of Will Rogers Institute, and provide social service assistance to eligible
+      members of the theatrical entertainment industry through the Motion Pictures
+      Pioneers Assistance Fund.', name: Will Rogers Motion Picture Pioneers Foundation,
+    value: 2}
+  id: 113
+  model: charity
+- field: {description: 'Provide treatment, surgery, and related assistance to children
+      and adults everywhere, including those in developing countries, suffering from
+      disease, illness, or disability.', name: WonderWork, value: 2}
+  id: 114
+  model: charity
+- field: {description: 'Amplifies the voice of the LGBT community by empowering real
+      people to share their stories, holding the media accountable for the words and
+      images they present, and helping grassroots organizations communicate effectively.',
+    name: Gay and Lesbian Alliance Against Defamation, value: 2}
+  id: 115
+  model: charity
+- field: {description: 'Civil rights organization working to achieve equality for
+      lesbian, gay, bisexual and transgender (LGBT) Americans.', name: Human Rights
+      Campaign, value: 2}
+  id: 116
+  model: charity
+- field: {description: 'Research, advocacy and education to support and protect lesbian,
+      gay, bisexual and transgender (LGBT) individuals and families.', name: Human
+      Rights Campaign Foundation, value: 2}
+  id: 117
+  model: charity
+- field: {description: 'A national organization committed to achieving full recognition
+      of the civil rights of lesbians, gay men, bisexuals, transgender people and
+      those with HIV through impact litigation, education and public policy work.',
+    name: Lambda Legal Defense and Education Fund, value: 2}
+  id: 118
+  model: charity
+- field: {description: 'To end suicide among lesbian, gay, bisexual, transgender and
+      questioning (LGBTQ) young people.', name: Trevor Project, value: 2}
+  id: 119
+  model: charity
+- field: {description: 'Exists to serve God by helping to build a society that respects
+      and protects individual innocent human beings from creation to death--without
+      compromise, without exception, without apology.', name: American Life League,
+    value: -2}
+  id: 120
+  model: charity
+- field: {description: Promoting and defending women's reproductive rights worldwide.,
+    name: Center for Reproductive Rights, value: 2}
+  id: 121
+  model: charity
+- field: {description: 'To advance sexual and reproductive health and rights through
+      an interrelated program of research, policy analysis, and public education designed
+      to generate new ideas, encourage enlightened public debate, and promote sound
+      policy and program development.', name: Guttmacher Institute, value: 2}
+  id: 122
+  model: charity
+- field: {description: Promotion of social welfare and education of the public on
+      matters related to reproductive rights., name: NARAL Pro Choice America (National
+      Office), value: 2}
+  id: 123
+  model: charity
+- field: {description: 'To operate for the benefit of, to perform the educational
+      and charitable functions of, and to carry out the educational and charitable
+      purposes of NARAL Pro-Choice America.', name: NARAL Pro-Choice America Foundation
+      (National Office), value: 2}
+  id: 124
+  model: charity
+- field: {description: Devoted to disseminating information and support for pro-life
+      issues., name: National Right to Life Committee, value: -2}
+  id: 125
+  model: charity
+- field: {description: 'Educates the public about abortion, euthanasia, infanticide,
+      and other related issues within the scope of bioethics.', name: National Right
+      to Life Educational Trust Fund, value: 2}
+  id: 126
+  model: charity
+- field: {description: To protect women's health and reproductive choice through advocacy.,
+    name: Planned Parenthood Action Fund, value: 2}
+  id: 127
+  model: charity
+- field: {description: Provide information and education in regards to reproductive
+      choice., name: Religious Coalition for Reproductive Choice, value: 2}
+  id: 128
+  model: charity
+- field: {description: Provide information and education in regards to reproductive
+      choice., name: Religious Coalition for Reproductive Choice Educational Fund,
+    value: 2}
+  id: 129
+  model: charity
