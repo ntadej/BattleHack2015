@@ -25,7 +25,7 @@ def getFeed(query):
     i = 0
 
     for item in js:
-        #item['contentSnippet'] = remove_datetime_data(item['contentSnippet'])
+        item['contentSnippet'] = remove_datetime_data(item['contentSnippet'])
         megaArray += [{'title': item['title'], 'link': item['link'], 'snippet': item['contentSnippet']}]
         # megaArray += [item['link']]
         i += 1
@@ -37,9 +37,9 @@ def getFeed(query):
 # a = getFeed("hillary clinton")
 
 
-##Return first 5 titles and links to recent news about query
+# Return first 5 titles and links to recent news about query
 if __name__ == '__main__':
     for i in getFeed('Hillary'):
-         tmp = i['snippet']
-         #tmp = 'Nekoc nekje <b>...</b> probamo <b>...</b> in <b>...</b>'
-         print(tmp)
+        tmp = i['snippet']
+        # tmp = 'Nekoc nekje <b>...</b> probamo <b>...</b> in <b>...</b>'
+        print(tmp)
